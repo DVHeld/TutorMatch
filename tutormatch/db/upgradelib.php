@@ -15,14 +15,25 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Plugin strings are defined here.
+ * Plugin upgrade helper functions are defined here.
  *
- * @package     local_local_tutormatch
- * @category    string
+ * @package     local_tutormatch
+ * @category    upgrade
  * @copyright   2018 Dusan Vilicic Held <dvheld@gmail.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'TutorMatch';
+/**
+ * Helper function used by the upgrade.php file.
+ */
+function local_tutormatch_helper_function() {
+    global $DB;
+
+    // Please note that you should always be performing any task using raw (low
+    // level) database access exclusively, avoiding any use of the Moodle APIs.
+    //
+    // For more information please read the available Moodle documentation:
+    // https://docs.moodle.org/dev/Upgrade_API
+}

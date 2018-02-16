@@ -15,17 +15,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Plugin administration pages are defined here.
+ * Code that is executed before the tables and data are dropped during the plugin uninstallation.
  *
- * @package     local_local_tutormatch
- * @category    admin
+ * @package     local_tutormatch
+ * @category    upgrade
  * @copyright   2018 Dusan Vilicic Held <dvheld@gmail.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-if ($ADMIN->fulltree) {
-   // TODO: Define the plugin settings page.
-   // https://docs.moodle.org/dev/Admin_settings
+/**
+ * Custom uninstallation procedure.
+ */
+function xmldb_local_tutormatch_uninstall() {
+
+    return true;
 }

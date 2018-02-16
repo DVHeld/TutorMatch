@@ -17,7 +17,7 @@
 /**
  * Plugin upgrade steps are defined here.
  *
- * @package     local_local_tutormatch
+ * @package     local_tutormatch
  * @category    upgrade
  * @copyright   2018 Dusan Vilicic Held <dvheld@gmail.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 require_once(__DIR__.'/upgradelib.php');
 
 /**
- * Execute local_local_tutormatch upgrade from the given old version.
+ * Execute local_tutormatch upgrade from the given old version.
  *
  * @param int $oldversion
  * @return bool
  */
-function xmldb_local_local_tutormatch_upgrade($oldversion) {
+function xmldb_local_tutormatch_upgrade($oldversion) {
     global $DB;
 
     $dbman = $DB->get_manager();
