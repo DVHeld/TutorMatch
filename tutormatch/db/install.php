@@ -15,17 +15,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Plugin version and other meta-data are defined here.
+ * Code to be executed after the plugin's database scheme has been installed is defined here.
  *
- * @package     local_local_tutormatch
+ * @package     local_tutormatch
+ * @category    upgrade
  * @copyright   2018 Dusan Vilicic Held <dvheld@gmail.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'local_local_tutormatch';
-$plugin->release = '0.1.0';
-$plugin->version = 2018021600;
-$plugin->requires = 2017051500;
-$plugin->maturity = MATURITY_ALPHA;
+/**
+ * Custom code to be run on installing the plugin.
+ */
+function xmldb_local_tutormatch_install() {
+
+    return true;
+}

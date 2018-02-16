@@ -15,20 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Code to be executed after the plugin's database scheme has been installed is defined here.
+ * Plugin strings are defined here.
  *
- * @package     local_local_tutormatch
- * @category    upgrade
+ * @package     local_tutormatch
+ * @category    string
  * @copyright   2018 Dusan Vilicic Held <dvheld@gmail.com>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-/**
- * Custom code to be run on installing the plugin.
- */
-function xmldb_local_local_tutormatch_install() {
-
-    return true;
-}
+$string['pluginname'] = 'TutorMatch';
