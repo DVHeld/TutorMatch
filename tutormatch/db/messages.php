@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Plugin message handlers are defined here.
+ * Defines message providers (types of messages being sent)
  *
  * @package     local_tutormatch
  * @copyright   2018 Dusan Vilicic Held <dvheld@gmail.com>
