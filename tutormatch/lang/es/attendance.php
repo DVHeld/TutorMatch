@@ -98,64 +98,64 @@ $string['confirmcolumnmappings'] = 'Confirmar mapeo de columnas';
 $string['confirmdeletehiddensessions'] = '¿Está seguro que desea eliminar {$a->count} sesiones planificadas antes de la fecha de inicio del curso ({$a->date})?';
 $string['confirmdeleteuser'] = '¿Está seguro que desea eliminar el usuario \'{$a->fullname}\' ({$a->email})?<br/>Todos sus registros de TutorMatch serán eliminados permanentemente.';
 $string['copyfrom'] = 'Copiar datos de dominio desde'; // -----------------------------------------
-$string['countofselected'] = 'Count of selected';
-$string['course'] = 'Course';
-$string['coursesummary'] = 'Course summary report';
-$string['createmultiplesessions'] = 'Create multiple sessions';
-$string['createmultiplesessions_help'] = 'This function allows you to create multiple sessions in one simple step.
-The sessions begin on the date of the base session and continue until the \'repeat until\' date.
+$string['countofselected'] = 'Cantidad de seleccionados';
+$string['course'] = 'Curso';
+$string['coursesummary'] = 'Reporte resumen de curso';
+$string['createmultiplesessions'] = 'Crear múltiples sesiones';
+$string['createmultiplesessions_help'] = 'Esta función le permite crear múltiples sesiones en un simple paso.
+Las sesiones comienzan en la fecha de la sesión base y continúan hasta el la fecha \'repetir hasta\'.
 
-  * <strong>Repeat on</strong>: Select the days of the week when your class will meet (for example, Monday/Wednesday/Friday).
-  * <strong>Repeat every</strong>: This allows for a frequency setting. If your class will meet every week, select 1; if it will meet every other week, select 2; every 3rd week, select 3, etc.
-  * <strong>Repeat until</strong>: Select the last day of class (the last day you want to take attendance).
+  * <strong>Repetir los</strong>: Selecciona los días de la semana cuando su clase se reunirá (por ejemplo, Lunes/Miércoles/Viernes).
+  * <strong>Repetir cada</strong>: Esto permite establecer una frecuencia. Si su clase se reune cada semana, seleccione 1; si se reunirá semana por medio, seleccione 2; cada tres semanas, seleccione 3, etc.
+  * <strong>Repetir hasta</strong>: Seleccionar el último día de clases (el último día que desea tener sesiones).
 ';
-$string['autoassignstatus'] = 'Automatically select highest status available';
-$string['autoassignstatus_help'] = 'If this is selected, students will automatically be assigned the highest available grade.';
-$string['createonesession'] = 'Create one session for the course';
-$string['csvdelimiter'] = 'CSV delimiter';
-$string['date'] = 'Date';
-$string['days'] = 'Days';
-$string['defaultdisplaymode'] = 'Default display mode';
-$string['defaultwarnings'] = 'Default warning set';
-$string['defaultwarningsettings'] = 'Default warning settings';
-$string['defaultwarningsettings_help'] = 'These settings define the defaults for all new warnings';
-$string['defaults'] = 'Defaults';
-$string['defaultsessionsettings'] = 'Default session settings';
-$string['defaultsessionsettings_help'] = 'These settings define the defaults for all new sessions';
-$string['defaultsettings'] = 'Default attendance settings';
-$string['defaultsettings_help'] = 'These settings define the defaults for all new attendances';
-$string['defaultstatus'] = 'Default status set';
-$string['defaultsubnet'] = 'Default network address';
-$string['defaultsubnet_help'] = 'Attendance recording may be restricted to particular subnets by specifying a comma-separated list of partial or full IP addresses. This is the default value used when creating new sessions.';
-$string['defaultview'] = 'Default view on login';
-$string['defaultview_desc'] = 'This is the default view shown to teachers on first login.';
-$string['delete'] = 'Delete';
-$string['deletewarningconfirm'] = 'Are you sure you want to delete this warning?';
-$string['deletedgroup'] = 'The group associated with this session has been deleted';
-$string['deletehiddensessions'] = 'Delete all hidden sessions';
-$string['deletelogs'] = 'Delete attendance data';
-$string['deleteselected'] = 'Delete selected';
-$string['deletesession'] = 'Delete session';
-$string['deletesessions'] = 'Delete all sessions';
-$string['deleteuser'] = 'Delete user';
-$string['deletingsession'] = 'Deleting session for the course';
-$string['deletingstatus'] = 'Deleting status for the course';
-$string['description'] = 'Description';
-$string['display'] = 'Display';
-$string['displaymode'] = 'Display mode';
-$string['donotusepaging'] = 'Do not use paging';
-$string['downloadexcel'] = 'Download in Excel format';
-$string['downloadooo'] = 'Download in OpenOffice format';
-$string['downloadtext'] = 'Download in text format';
-$string['duration'] = 'Duration';
-$string['editsession'] = 'Edit Session';
-$string['edituser'] = 'Edit user';
-$string['emailcontent_default'] = 'Hi %userfirstname%,
-Your attendance in %coursename% %attendancename% has dropped below %warningpercent% and is currently %percent% - we hope you are ok!
+$string['autoassignstatus'] = 'Automáticamente selecciona el estado más alto disponible';
+$string['autoassignstatus_help'] = 'Si esto está seleccionado, a los estudiantes se les asignará la nota más alta de forma automática.';
+$string['createonesession'] = 'Crear una sesión para el curso';
+$string['csvdelimiter'] = 'Delimitador CSV';
+$string['date'] = 'Fecha';
+$string['days'] = 'Días';
+$string['defaultdisplaymode'] = 'Modo de visualizavción por defecto';
+$string['defaultwarnings'] = 'Advertencia por defecto establecida';
+$string['defaultwarningsettings'] = 'Configuración de advertencia por defecto';
+$string['defaultwarningsettings_help'] = 'Estas opciones definen las configuraciones por defecto para todas las advertencias nuevas';
+$string['defaults'] = 'Configuraciones por defecto';
+$string['defaultsessionsettings'] = 'Configuraciones de sesión por defecto';
+$string['defaultsessionsettings_help'] = 'Estas opciones definen las configuraciones por defecto para todas las sesiones nuevas';
+$string['defaultsettings'] = 'Configuraciones de dominio por defecto';
+$string['defaultsettings_help'] = 'Estas opciones definen las configuraciones por defecto para todos los dominios nuevos';
+$string['defaultstatus'] = 'Estado por defecto establecido';
+$string['defaultsubnet'] = 'Dirección de red por defecto';
+$string['defaultsubnet_help'] = 'El registro de dominio puede ser restringidio a subredes particulares por medio de especificar una lista separada por comas, de direcciones IP completas o parciales. Este es el valor por defecto utilizado cuando se crean sesiones nuevas.';
+$string['defaultview'] = 'Vista por defecto al iniciar sesión';
+$string['defaultview_desc'] = 'Esta es la vista por defecto mostrada a los profesores al iniciar sesión por primera vez.';
+$string['delete'] = 'Eliminar';
+$string['deletewarningconfirm'] = '¿Está seguro de que quiere eliminar esta advertencia?';
+$string['deletedgroup'] = 'El grupo asociado con esta sesión ha sido eliminado';
+$string['deletehiddensessions'] = 'Eliminar todas las sesiones ocultas';
+$string['deletelogs'] = 'Eliminar información de dominio';
+$string['deleteselected'] = 'Eliminar seleccionadas';
+$string['deletesession'] = 'Eliminar sesión';
+$string['deletesessions'] = 'Eliminar todas las sesiones';
+$string['deleteuser'] = 'Eliminar usuario';
+$string['deletingsession'] = 'Eliminando sesión del curso';
+$string['deletingstatus'] = 'Eliminando estado del curso';
+$string['description'] = 'Descripción';
+$string['display'] = 'Visualización';
+$string['displaymode'] = 'Modo de visualización';
+$string['donotusepaging'] = 'No usar páginas';
+$string['downloadexcel'] = 'Descargar en formato Excel';
+$string['downloadooo'] = 'Descargar en formato OpenOffice';
+$string['downloadtext'] = 'Descargar en formato de texto plano';
+$string['duration'] = 'Duración';
+$string['editsession'] = 'Editar Sesión';
+$string['edituser'] = 'Editar usuario';
+$string['emailcontent_default'] = 'Hola %userfirstname%,
+Su dominio en %coursename% %attendancename% ha caído por debajo de %warningpercent% y es actualmente de %percent% - ¡Esperamos que esté bien!
 
-To get the most out of this course you should improve your attendance, please get in touch if you require any further support.';
-$string['emailcontent'] = 'Email content';
-$string['emailcontent_help'] = 'When a warning is sent to a student, it takes the email content from this field. The following wildcards can be used:
+Por favor contáctese con su profesor si requiere ayuda adicional.';
+$string['emailcontent'] = 'Enviar contenido por e-mail';
+$string['emailcontent_help'] = 'Cuando una advertencia es enviada a un estudiante, el contenido del e-mail proviene de este campo. Se pueden usar los siguientes comodines:
 <ul>
 <li>%coursename%</li>
 <li>%userfirstname%</li>
@@ -170,20 +170,20 @@ $string['emailcontent_help'] = 'When a warning is sent to a student, it takes th
 <li>%percent%</li>
 </ul>';
 
-$string['emailsubject'] = 'Email subject';
-$string['emailsubject_help'] = 'When a warning is sent to a student, it takes the email subject from this field.';
-$string['emailsubject_default'] = 'Attendance warning';
-$string['emailuser'] = 'Email user';
-$string['emailuser_help'] = 'If checked, a warning will be sent to the student.';
-$string['emptyacronym'] = 'Empty acronyms are not allowed. Status record not updated.';
-$string['emptydescription'] = 'Empty descriptions are not allowed. Status record not updated.';
-$string['enablecalendar'] = 'Create calendar events';
-$string['enablecalendar_desc'] = 'If enabled, a calendar event will be created for each attendance session. After changing this setting you should run the reset calendar report.';
-$string['enablewarnings'] = 'Enable warnings';
-$string['enablewarnings_desc'] = 'This allows a warning set to be defined for an attendance and email notifications to users when attendance drops below the configured threshold. <br/><strong>WARNING: This is a new feature and has not been tested extensively. Please use at your own-risk and provide feeback in the moodle forums if you find it works well.</strong>';
-$string['encoding'] = 'Encoding';
-$string['endofperiod'] = 'End of period';
-$string['endtime'] = 'Session end time';
+$string['emailsubject'] = 'Asunto del e-amil';
+$string['emailsubject_help'] = 'Cuando una advertencia es enviada a un estudiante, el asunto del e-mail proviene de este campo.';
+$string['emailsubject_default'] = 'Advertencia de dominio';
+$string['emailuser'] = 'Envíar e-mail al usuario';
+$string['emailuser_help'] = 'Si está marcada, se enviará una advertencia al estudiante.';
+$string['emptyacronym'] = 'No están permitidos los acrónimos vacíos. Registro de estados no actualizado.';
+$string['emptydescription'] = 'No están permitidas las descripciones vacías. Registro de estados no actualizado';
+$string['enablecalendar'] = 'Crear eventos de calendario';
+$string['enablecalendar_desc'] = 'Si está habilitada, se creará un evento de calendario para cada sesión. Luego de cambiar esta opción usted debería ejecutar el reinicio de reporte de calendario.';
+$string['enablewarnings'] = 'Habilitar advertencias';
+//$string['enablewarnings_desc'] = 'This allows a warning set to be defined for an attendance and email notifications to users when attendance drops below the configured threshold. <br/><strong>WARNING: This is a new feature and has not been tested extensively. Please use at your own-risk and provide feeback in the moodle forums if you find it works well.</strong>';
+$string['encoding'] = 'Codificación';
+$string['endofperiod'] = 'Fin de período';
+$string['endtime'] = 'Tiempo de fin de sesión';
 $string['enrolmentend'] = 'User enrolment ends {$a}';
 $string['enrolmentstart'] = 'User enrolment starts {$a}';
 $string['enrolmentsuspended'] = 'Enrolment suspended';
