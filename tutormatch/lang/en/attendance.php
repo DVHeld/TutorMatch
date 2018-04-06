@@ -107,7 +107,7 @@ The sessions begin on the date of the base session and continue until the \'repe
 
   * <strong>Repeat on</strong>: Select the days of the week when your class will meet (for example, Monday/Wednesday/Friday).
   * <strong>Repeat every</strong>: This allows for a frequency setting. If your class will meet every week, select 1; if it will meet every other week, select 2; every 3rd week, select 3, etc.
-  * <strong>Repeat until</strong>: Select the last day of class (the last day you want to take attendance).
+  * <strong>Repeat until</strong>: Select the last day of class (the last day you want to have sessions).
 ';
 $string['autoassignstatus'] = 'Automatically select highest status available';
 $string['autoassignstatus_help'] = 'If this is selected, students will automatically be assigned the highest available grade.';
@@ -122,18 +122,18 @@ $string['defaultwarningsettings_help'] = 'These settings define the defaults for
 $string['defaults'] = 'Defaults';
 $string['defaultsessionsettings'] = 'Default session settings';
 $string['defaultsessionsettings_help'] = 'These settings define the defaults for all new sessions';
-$string['defaultsettings'] = 'Default attendance settings';
-$string['defaultsettings_help'] = 'These settings define the defaults for all new attendances';
+$string['defaultsettings'] = 'Default mastery settings';
+$string['defaultsettings_help'] = 'These settings define the defaults for all new masteries';
 $string['defaultstatus'] = 'Default status set';
 $string['defaultsubnet'] = 'Default network address';
-$string['defaultsubnet_help'] = 'Attendance recording may be restricted to particular subnets by specifying a comma-separated list of partial or full IP addresses. This is the default value used when creating new sessions.';
+$string['defaultsubnet_help'] = 'Mastery recording may be restricted to particular subnets by specifying a comma-separated list of partial or full IP addresses. This is the default value used when creating new sessions.';
 $string['defaultview'] = 'Default view on login';
 $string['defaultview_desc'] = 'This is the default view shown to teachers on first login.';
 $string['delete'] = 'Delete';
 $string['deletewarningconfirm'] = 'Are you sure you want to delete this warning?';
 $string['deletedgroup'] = 'The group associated with this session has been deleted';
 $string['deletehiddensessions'] = 'Delete all hidden sessions';
-$string['deletelogs'] = 'Delete attendance data';
+$string['deletelogs'] = 'Delete mastery data';
 $string['deleteselected'] = 'Delete selected';
 $string['deletesession'] = 'Delete session';
 $string['deletesessions'] = 'Delete all sessions';
@@ -151,9 +151,9 @@ $string['duration'] = 'Duration';
 $string['editsession'] = 'Edit Session';
 $string['edituser'] = 'Edit user';
 $string['emailcontent_default'] = 'Hi %userfirstname%,
-Your attendance in %coursename% %attendancename% has dropped below %warningpercent% and is currently %percent% - we hope you are ok!
+Your mastery in %coursename% %attendancename% has dropped below %warningpercent% and is currently %percent% - we hope you are ok!
 
-To get the most out of this course you should improve your attendance, please get in touch if you require any further support.';
+Please get in touch if you require any further support.';
 $string['emailcontent'] = 'Email content';
 $string['emailcontent_help'] = 'When a warning is sent to a student, it takes the email content from this field. The following wildcards can be used:
 <ul>
@@ -172,15 +172,15 @@ $string['emailcontent_help'] = 'When a warning is sent to a student, it takes th
 
 $string['emailsubject'] = 'Email subject';
 $string['emailsubject_help'] = 'When a warning is sent to a student, it takes the email subject from this field.';
-$string['emailsubject_default'] = 'Attendance warning';
+$string['emailsubject_default'] = 'Mastery warning';
 $string['emailuser'] = 'Email user';
 $string['emailuser_help'] = 'If checked, a warning will be sent to the student.';
 $string['emptyacronym'] = 'Empty acronyms are not allowed. Status record not updated.';
 $string['emptydescription'] = 'Empty descriptions are not allowed. Status record not updated.';
 $string['enablecalendar'] = 'Create calendar events';
-$string['enablecalendar_desc'] = 'If enabled, a calendar event will be created for each attendance session. After changing this setting you should run the reset calendar report.';
+$string['enablecalendar_desc'] = 'If enabled, a calendar event will be created for each session. After changing this setting you should run the reset calendar report.';
 $string['enablewarnings'] = 'Enable warnings';
-$string['enablewarnings_desc'] = 'This allows a warning set to be defined for an attendance and email notifications to users when attendance drops below the configured threshold. <br/><strong>WARNING: This is a new feature and has not been tested extensively. Please use at your own-risk and provide feeback in the moodle forums if you find it works well.</strong>';
+$string['enablewarnings_desc'] = 'This allows a warning set to be defined for an mastery and email notifications to users when mastery drops below the configured threshold. <br/><strong>WARNING: This is a new feature and has not been tested extensively. Please use at your own-risk and provide feeback in the moodle forums if you find it works well.</strong>';
 $string['encoding'] = 'Encoding';
 $string['endofperiod'] = 'End of period';
 $string['endtime'] = 'Session end time';
@@ -188,7 +188,7 @@ $string['enrolmentend'] = 'User enrolment ends {$a}';
 $string['enrolmentstart'] = 'User enrolment starts {$a}';
 $string['enrolmentsuspended'] = 'Enrolment suspended';
 $string['error:coursenotfound'] = 'A course with the short name {$a} can not be found.';
-$string['error:coursehasnoattendance'] = 'The course with the short name {$a} has no attendance activities.';
+$string['error:coursehasnoattendance'] = 'The course with the short name {$a} has no TutorMatch activities.';
 $string['error:sessioncourseinvalid'] = 'A session course is invalid! Skipping.';
 $string['error:sessiondateinvalid'] = 'A session date is invalid! Skipping.';
 $string['error:sessionendinvalid'] = 'A session end time is invalid! Skipping.';
@@ -197,7 +197,7 @@ $string['errorgroupsnotselected'] = 'Select one or more groups';
 $string['errorinaddingsession'] = 'Error in adding session';
 $string['erroringeneratingsessions'] = 'Error in generating sessions ';
 $string['eventdurationupdated'] = 'Session duration updated';
-$string['eventreportviewed'] = 'Attendance report viewed'; // -----------------------------------------------
+$string['eventreportviewed'] = 'Mastery report viewed'; // -----------------------------------------------
 $string['eventscreated'] = 'Calendar events created';
 $string['eventsdeleted'] = 'Calendar events deleted';
 $string['eventsessionadded'] = 'Session added';
