@@ -214,85 +214,85 @@ $string['from'] = 'de:';
 $string['gradebookexplanation'] = 'Nota en registro de evaluaciones';
 $string['gradebookexplanation_help'] = 'El módulo TutorMatch despliega su nota de dominio actual basada en el número de puntos que ha obtenido a la fecha y el número de puntos que podría haber obtenido a la fecha; no incluye períodos fururos de clase. En el registro de evaluaciones, su nota de dominio está basada en su porcentaje actual de dominio y el número de puntos que pueden ser obtenidos a lo largo de la duración completa del curso, incluyendo períodos futuros de clase. Así, sus notas de dominio mostradas en el módulo TutorMatch y en el registro de evaluaciones pueden no ser el mismo número de puntos pero son el mismo porcentaje.
 
-For example, if you have earned 8 of 10 points to date (80% attendance) and attendance for the entire course is worth 50 points, the Attendance module will display 8/10 and the gradebook will display 40/50. You have not yet earned 40 points but 40 is the equivalent point value to your current attendance percentage of 80%. The point value you have earned in the Attendance module can never decrease, as it is based only on attendance to date; however, the attendance point value shown in the gradebook may increase or decrease depending on your future attendance, as it is based on attendance for the entire course.';
-$string['gridcolumns'] = 'Grid columns';
-$string['group'] = 'Group';
-$string['groups'] = 'Groups';
-$string['groupsession'] = 'Group of students';
-$string['hiddensessions'] = 'Hidden sessions';
-$string['hiddensessions_help'] = 'Sessions are hidden if they are scheduled before the course start date.
+Por ejemplo, si a la fecha ha obtenido 8 de 10 puntos (80% de dominio) y el dominio para el curso completo vale 50 puntos, el módulo TutorMatch mostrará 8/10 y el registro de evaluaciones mostrará 40/50. Aún no ha obtenido 40 putos pero 40 es el valor equivalente en puntos de su porcentaje de dominio actual de 80%. El valor en puntos que ha obtenido en el módulo TutorMatch nunca puede decrecer, porque sólo está basado en en el dominio a la fecha; however, sin embardo, el valor del dominio en puntos mostrado en el registro de evaluaciones puede incrementar o decrementar dependiendo de su dominio futuro, pues está basado en el dominio para el curso completo.';
+$string['gridcolumns'] = 'Columnas de cuadrícula';
+$string['group'] = 'Grupo';
+$string['groups'] = 'Grupos';
+$string['groupsession'] = 'Grupo de estudiantes';
+$string['hiddensessions'] = 'Sesiones ocultas';
+$string['hiddensessions_help'] = 'Las sesiones están ocultas si están programadas antes de la fecha de inicio del curso.
 
-You can use this feature to hide older sessions instead of deleting them. Only visible sessions will appear in the Gradebook.';
-$string['hiddensessionsdeleted'] = 'All hidden sessions were delete';
-$string['hidensessiondetails'] = 'Hide session details';
-$string['import'] = 'Import';
-$string['importfile'] = 'Import file';
-$string['importfile_help'] = 'Import file';
-$string['importsessions'] = 'Import Sessions';
-$string['identifyby'] = 'Identify student by';
-$string['includeall'] = 'Select all sessions';
-$string['includenottaken'] = 'Include not taken sessions';
-$string['includeremarks'] = 'Include remarks';
-$string['incorrectpassword'] = 'You have entered an incorrect password and your attendance has not been recorded, please enter the correct password.';
-$string['indetail'] = 'In detail...';
-$string['invalidaction'] = 'You must select an action';
-$string['invalidemails'] = 'You must specify addresses of existing user accounts, could not find: {$a}';
-$string['invalidimportfile'] = 'File format is invalid.';
-$string['invalidsessionenddate'] = 'This date can not be earlier than the session date';
-$string['invalidsessionendtime'] = 'The end time must be greater than start time';
-$string['invalidstatus'] = 'You have selected an invalid status, please try again';
-$string['jumpto'] = 'Jump to';
-$string['lowgrade'] = 'Low grade';
-$string['maxpossible'] = 'Maximum possible';
-$string['maxpossible_help'] = 'Shows the score each user can reach if they receive the maximum points in each session not yet taken (past and future):
+Puede usar esta funcionalidad para ocultar sesiones antiguas en vez de eliminarlas. En el registro de evaluaciones sólo aparecerán sesiones visibles.';
+$string['hiddensessionsdeleted'] = 'Todas las sesiones ocultas fueron eliminadas';
+$string['hidensessiondetails'] = 'Ocultar detalles de sesión';
+$string['import'] = 'Importar';
+$string['importfile'] = 'Importar archivo';
+$string['importfile_help'] = 'Importar archivo';
+$string['importsessions'] = 'Importar Sesiones';
+$string['identifyby'] = 'Identificar estudiante por';
+$string['includeall'] = 'Seleccionar todas las sesiones';
+$string['includenottaken'] = 'Incluír sesiones no tomadas';
+$string['includeremarks'] = 'Incluír comentarios';
+$string['incorrectpassword'] = 'Ha ingresado una contraseña incorrecta y su dominio no ha sido registrado, por favor ingrese la contraseña correcta.';
+$string['indetail'] = 'En detalle...';
+$string['invalidaction'] = 'Debe seleccionar una acción';
+$string['invalidemails'] = 'Debe especificar direcciones de cuentas de usuario existentes, no se pudo encontrar: {$a}';
+$string['invalidimportfile'] = 'Formato de archivo inválido.';
+$string['invalidsessionenddate'] = 'Esta fecha no puede ser anterior a la fecha de la sesión';
+$string['invalidsessionendtime'] = 'El tiempo de fin debe ser posterior a la fecha de inicio';
+$string['invalidstatus'] = 'Ha seleccionado un estado inválido, por favor inténtelo de nuevo';
+$string['jumpto'] = 'Saltar a';
+$string['lowgrade'] = 'Nota baja';
+$string['maxpossible'] = 'Máximo posible';
+$string['maxpossible_help'] = 'Muestra el puntaje que cada usuario puede obtener si recibe el máximo de puntos en cada sesión que aún no se ha tomado (pasadas y futuras):
     <ul>
-    <li><strong>Points</strong>: maximum points each user can reach over all sessions.</li>
-    <li><strong>Percentage</strong>: maximum percentage each user can reach over all sessions.</li>
+    <li><strong>Puntos</strong>: máximo de puntos que cada usuario puede obtener contando todas las sesiones.</li>
+    <li><strong>Porcentaje</strong>: porcentaje máximo que cada usuario puede obtener contando todas las sesiones.</li>
     </ul>';
-$string['maxpossiblepercentage'] = 'Maximum possible percentage';
-$string['maxpossiblepoints'] = 'Maximum possible points';
-$string['maxwarn'] = 'Maximum number of e-mail warnings';
-$string['maxwarn_help'] = 'The maximum number of times a warning should be sent (only one warning per session is sent)';
-$string['mergeuser'] = 'Merge user';
-$string['modulename'] = 'Attendance';
-$string['modulename_help'] = 'The attendance activity module enables a teacher to take attendance during class and students to view their own attendance record.
+$string['maxpossiblepercentage'] = 'Porcentaje máximo posible';
+$string['maxpossiblepoints'] = 'Puntaje máximo posible';
+$string['maxwarn'] = 'Número máximo de advertencias por e-mail';
+$string['maxwarn_help'] = 'El número máximo de veces que se debe enviar una advertencia (sólo se envía una advertencia por sesión)';
+$string['mergeuser'] = 'Combinar usuario';
+$string['modulename'] = 'Dominio';
+$string['modulename_help'] = 'El módulo TutorMatch permite al profesor usar la metodología TutorMatch, ver el dominio de los temas que los estudiantes han reportado, entre otra información.
 
-The teacher can create multiple sessions and can mark the attendance status as "Present", "Absent", "Late", or "Excused" or modify the statuses to suit their needs.
+El profesor puede crear temas, agregarles información, y agendar sesiones de TutorMatch. Los estudiantes pueden marcar si dominan los temas, ver las sesiones, y ver los temas e integrantes de grupo que les tocarán en cada ronda durante la sesión.
 
-Reports are available for the entire class or individual students.';
-$string['modulenameplural'] = 'Attendances';
-$string['months'] = 'Months';
-$string['moreattendance'] = 'Attendance has been successfully taken for this page';
-$string['moveleft'] = 'Move left';
-$string['moveright'] = 'Move right';
-$string['multisessionexpanded'] = 'Multiple sessions expanded';
-$string['multisessionexpanded_desc'] = 'Show the "Multiple sessions" settings as expanded by default when creating new sessions.';
-$string['mustselectusers'] = 'Must select users to export';
-$string['newdate'] = 'New date';
-$string['newduration'] = 'New duration';
-$string['newstatusset'] = 'New set of statuses';
-$string['noattendanceusers'] = 'It is not possible to export any data as there are no students enrolled in the course.';
-$string['noautomark'] = 'Disabled';
-$string['noattforuser'] = 'No attendance records exist for the user';
-$string['nodescription'] = 'Regular class session';
-$string['noeventstoreset'] = 'There are no calendar events that require an update.';
-$string['nogroups'] = 'You can\'t add group sessions. No groups exists in course.';
-$string['noguest'] = 'Guest can\'t see attendance';
-$string['noofdaysabsent'] = 'No of days absent';
-$string['noofdaysexcused'] = 'No of days excused';
-$string['noofdayslate'] = 'No of days late';
-$string['noofdayspresent'] = 'No of days present';
-$string['nosessiondayselected'] = 'No Session day selected';
-$string['nosessionexists'] = 'No Session exists for this course';
-$string['nosessionsselected'] = 'No sessions selected';
-$string['warningdeleted'] = 'Warning deleted';
-$string['warningdesc'] = 'These warnings will be automatically added to any new attendance activities. If more than one warning is triggered at exactly the same time, only the warning with the lower warning threshold will be sent.';
-$string['warningdesc_course'] = 'Warnings thresholds set here affect the absentee report and allow students and third parties to be notified.  If more than one warning is triggered at exactly the same time, only the warning with the lower warning threshold will be sent.';
-$string['warnings'] = 'Warnings set';
-$string['warningupdated'] = 'Updated warnings';
-$string['notifytask'] = 'Send warnings to users';
-$string['notfound'] = 'Attendance activity not found in this course!';
-$string['notmember'] = 'not&nbsp;member';
+Están disponibles reportes para la clase completa, para estudiantes individuales y para temas individuales.';
+$string['modulenameplural'] = 'Dominio';
+$string['months'] = 'Meses';
+$string['moreattendance'] = 'El dominio para esta página se ha registrado de forma exitosa';
+$string['moveleft'] = 'Mover a la izquierda';
+$string['moveright'] = 'Mover a la derecha';
+$string['multisessionexpanded'] = 'Múltiples sesiones expandidas';
+$string['multisessionexpanded_desc'] = 'Mostrar por defect como expandidas las opciones de "Sesiones múltiples" al crear nuevas sesiones.';
+$string['mustselectusers'] = 'Debe seleccionar usuarios para exportar';
+$string['newdate'] = 'Nueva fecha';
+$string['newduration'] = 'Nueva duración';
+$string['newstatusset'] = 'Nuevo conjunto de estados';
+$string['noattendanceusers'] = 'No es posible exportar datos porque no hay estudiantes registrados en el curso.';
+$string['noautomark'] = 'Deshabilitado';
+$string['noattforuser'] = 'No existen registros de dominio para el usuario';
+$string['nodescription'] = 'Sesión normal de clase';
+$string['noeventstoreset'] = 'No hay eventos de calendario que requieran una actualización.';
+$string['nogroups'] = 'No puede agregar sesiones de grupo. No existen grupos en el curso.';
+$string['noguest'] = 'Los invitados no pueden ver la información de dominio';
+$string['noofdaysabsent'] = 'N° de temas sin dominio';
+$string['noofdaysexcused'] = 'No of days excused'; // NU
+$string['noofdayslate'] = 'No of days late'; // NU
+$string['noofdayspresent'] = 'N° de temas dominados';
+$string['nosessiondayselected'] = 'No ha seleccionado un día de sesión';
+$string['nosessionexists'] = 'No existen sesiones para este curso';
+$string['nosessionsselected'] = 'No ha seleccionado sesiones';
+$string['warningdeleted'] = 'Advertencia eliminada';
+$string['warningdesc'] = 'Estas advertencias serán automáticamente agregadas a cualquier actividad TutorMatch nueva. Si se gatilla más de una advertencia a la vez, sólo se enviará la advertencia con el menor umbral.';
+$string['warningdesc_course'] = 'Los umbrales de advertancia establecidos aquí afectan el reporte de dominio y permiten que se notifique a estudiantes y terceras partes. Si se gatilla más de una advertencia a la vez, sólo se enviará la advertencia con el menor umbral.';
+$string['warnings'] = 'Advertencias establecidas';
+$string['warningupdated'] = 'Advertencias Actualizadas';
+$string['notifytask'] = 'Enviar advertencias a usuarios';
+$string['notfound'] = '¡Actividad TutorMatch no encontrada en este curso!';
+$string['notmember'] = 'no&nbsp;miembro';
 $string['noupgradefromthisversion'] = 'The Attendance module cannot upgrade from the version of attforblock you have installed. - please delete attforblock or upgrade it to the latest version before isntalling the new attendance module';
 $string['numsessions'] = 'Number of sessions';
 $string['olddate'] = 'Old date';
