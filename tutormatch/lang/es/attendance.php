@@ -254,13 +254,13 @@ $string['maxpossiblepoints'] = 'Puntaje máximo posible';
 $string['maxwarn'] = 'Número máximo de advertencias por e-mail';
 $string['maxwarn_help'] = 'El número máximo de veces que se debe enviar una advertencia (sólo se envía una advertencia por sesión)';
 $string['mergeuser'] = 'Combinar usuario';
-$string['modulename'] = 'Dominio';
+$string['modulename'] = 'TutorMatch';
 $string['modulename_help'] = 'El módulo TutorMatch permite al profesor usar la metodología TutorMatch, ver el dominio de los temas que los estudiantes han reportado, entre otra información.
 
 El profesor puede crear temas, agregarles información, y agendar sesiones de TutorMatch. Los estudiantes pueden marcar si dominan los temas, ver las sesiones, y ver los temas e integrantes de grupo que les tocarán en cada ronda durante la sesión.
 
 Están disponibles reportes para la clase completa, para estudiantes individuales y para temas individuales.';
-$string['modulenameplural'] = 'Dominio';
+$string['modulenameplural'] = 'TutorMatch';
 $string['months'] = 'Meses';
 $string['moreattendance'] = 'El dominio para esta página se ha registrado de forma exitosa';
 $string['moveleft'] = 'Mover a la izquierda';
@@ -270,7 +270,7 @@ $string['multisessionexpanded_desc'] = 'Mostrar por defect como expandidas las o
 $string['mustselectusers'] = 'Debe seleccionar usuarios para exportar';
 $string['newdate'] = 'Nueva fecha';
 $string['newduration'] = 'Nueva duración';
-$string['newstatusset'] = 'Nuevo conjunto de estados';
+$string['newstatusset'] = 'Nuevo conjunto de estados'; // NU
 $string['noattendanceusers'] = 'No es posible exportar datos porque no hay estudiantes registrados en el curso.';
 $string['noautomark'] = 'Deshabilitado';
 $string['noattforuser'] = 'No existen registros de dominio para el usuario';
@@ -293,16 +293,16 @@ $string['warningupdated'] = 'Advertencias Actualizadas';
 $string['notifytask'] = 'Enviar advertencias a usuarios';
 $string['notfound'] = '¡Actividad TutorMatch no encontrada en este curso!';
 $string['notmember'] = 'no&nbsp;miembro';
-$string['noupgradefromthisversion'] = 'The Attendance module cannot upgrade from the version of attforblock you have installed. - please delete attforblock or upgrade it to the latest version before isntalling the new attendance module';
-$string['numsessions'] = 'Number of sessions';
-$string['olddate'] = 'Old date';
-$string['onlyselectedusers'] = 'Export specific users';
-$string['overallsessions'] = 'Over all sessions'; // ------------------------
-$string['overallsessions_help'] = 'Shows statistics for all sessions including those not yet taken (past and future):
+$string['noupgradefromthisversion'] = 'El módulo TutorMatch no puede actualizarse desde la versión de attforblock que tiene instalada. - por favor elimine attforblock o actualízelo a la versión más reciente antes de instalar el nuevo módulo TutorMatch';
+$string['numsessions'] = 'Número de sesiones';
+$string['olddate'] = 'Fecha anterior';
+$string['onlyselectedusers'] = 'Exportar usuarios específicos';
+$string['overallsessions'] = 'En todas las sesiones'; // ------------------------
+$string['overallsessions_help'] = 'Muestra estadísticas para todas las sesiones incluyendo las que aún no se llevan a cabo (pasadas y futuras):
     <ul>
-    <li><strong>Sessions</strong>: total number of sessions.</li>
-    <li><strong>Points</strong>: points awarded based on the taken sessions.</li>
-    <li><strong>Percentage</strong>: percentage of points awarded over the maxium possible points for all sessions.</li>
+    <li><strong>Sesiones</strong>: número total de sesiones.</li>
+    <li><strong>Puntos</strong>: puntos otorgados en base a dominio.</li>
+    <li><strong>Porcentaje</strong>: porcentaje de puntos otorgados respecto del número máximo de puntos para todos los temas.</li>
     </ul>';
 $string['oversessionstaken'] = 'Over taken sessions';
 $string['oversessionstaken_help'] = 'Shows statistics for sessions where attendance has been taken:

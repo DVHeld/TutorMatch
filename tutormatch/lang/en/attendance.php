@@ -206,15 +206,15 @@ $string['eventsessionsimported'] = 'Sessions imported';
 $string['eventsessionupdated'] = 'Session updated';
 $string['eventstatusadded'] = 'Status added';
 $string['eventstatusupdated'] = 'Status updated';
-$string['eventtaken'] = 'Attendance taken';
-$string['eventtakenbystudent'] = 'Attendance taken by student';
+$string['eventtaken'] = 'Mastery registered';
+$string['eventtakenbystudent'] = 'Mastery registered by student';
 $string['export'] = 'Export';
 $string['extrarestrictions'] = 'Extra restrictions';
 $string['from'] = 'from:';
 $string['gradebookexplanation'] = 'Grade in gradebook';
-$string['gradebookexplanation_help'] = 'The Attendance module displays your current attendance grade based on the number of points you have earned to date and the number of points that could have been earned to date; it does not include class periods in the future. In the gradebook, your attendance grade is based on your current attendance percentage and the number of points that can be earned over the entire duration of the course, including future class periods. As such, your attendance grades displayed in the Attendance module and in the gradebook may not be the same number of points but they are the same percentage.
+$string['gradebookexplanation_help'] = 'The TutorMatch module displays your current mastery grade based on the number of points you have earned to date and the number of points that could have been earned to date; it does not include class periods in the future. In the gradebook, your mastery grade is based on your current mastery percentage and the number of points that can be earned over the entire duration of the course, including future class periods. As such, your mastery grades displayed in the TutorMatch module and in the gradebook may not be the same number of points but they are the same percentage.
 
-For example, if you have earned 8 of 10 points to date (80% attendance) and attendance for the entire course is worth 50 points, the Attendance module will display 8/10 and the gradebook will display 40/50. You have not yet earned 40 points but 40 is the equivalent point value to your current attendance percentage of 80%. The point value you have earned in the Attendance module can never decrease, as it is based only on attendance to date; however, the attendance point value shown in the gradebook may increase or decrease depending on your future attendance, as it is based on attendance for the entire course.';
+For example, if you have earned 8 of 10 points to date (80% mastery) and mastery for the entire course is worth 50 points, the TutorMatch module will display 8/10 and the gradebook will display 40/50. You have not yet earned 40 points but 40 is the equivalent point value to your current mastery percentage of 80%. The point value you have earned in the TutorMatch module can never decrease, as it is based only on mastery to date; however, the mastery point value shown in the gradebook may increase or decrease depending on your future mastery, as it is based on mastery for the entire course.';
 $string['gridcolumns'] = 'Grid columns';
 $string['group'] = 'Group';
 $string['groups'] = 'Groups';
@@ -223,7 +223,7 @@ $string['hiddensessions'] = 'Hidden sessions';
 $string['hiddensessions_help'] = 'Sessions are hidden if they are scheduled before the course start date.
 
 You can use this feature to hide older sessions instead of deleting them. Only visible sessions will appear in the Gradebook.';
-$string['hiddensessionsdeleted'] = 'All hidden sessions were delete';
+$string['hiddensessionsdeleted'] = 'All hidden sessions were deleted';
 $string['hidensessiondetails'] = 'Hide session details';
 $string['import'] = 'Import';
 $string['importfile'] = 'Import file';
@@ -233,7 +233,7 @@ $string['identifyby'] = 'Identify student by';
 $string['includeall'] = 'Select all sessions';
 $string['includenottaken'] = 'Include not taken sessions';
 $string['includeremarks'] = 'Include remarks';
-$string['incorrectpassword'] = 'You have entered an incorrect password and your attendance has not been recorded, please enter the correct password.';
+$string['incorrectpassword'] = 'You have entered an incorrect password and your mastery has not been recorded, please enter the correct password.';
 $string['indetail'] = 'In detail...';
 $string['invalidaction'] = 'You must select an action';
 $string['invalidemails'] = 'You must specify addresses of existing user accounts, could not find: {$a}';
@@ -254,15 +254,15 @@ $string['maxpossiblepoints'] = 'Maximum possible points';
 $string['maxwarn'] = 'Maximum number of e-mail warnings';
 $string['maxwarn_help'] = 'The maximum number of times a warning should be sent (only one warning per session is sent)';
 $string['mergeuser'] = 'Merge user';
-$string['modulename'] = 'Attendance';
-$string['modulename_help'] = 'The attendance activity module enables a teacher to take attendance during class and students to view their own attendance record.
+$string['modulename'] = 'TutorMatch';
+$string['modulename_help'] = 'The TutorMatch activity module enables a teacher to use the TutorMatch methodology, view student reported mastery of the classes\' topics, and other information.
 
-The teacher can create multiple sessions and can mark the attendance status as "Present", "Absent", "Late", or "Excused" or modify the statuses to suit their needs.
+The teacher can create topics, add information to them, and schedule TutorMatch sessions. Students can mark topics as mastered, see the sessions, and see the topics and the members of the group that they have been assigned to in each round in the session.
 
-Reports are available for the entire class or individual students.';
-$string['modulenameplural'] = 'Attendances';
+Reports are available for the entire class, individual students and individual topics.';
+$string['modulenameplural'] = 'TutorMatch';
 $string['months'] = 'Months';
-$string['moreattendance'] = 'Attendance has been successfully taken for this page';
+$string['moreattendance'] = 'Mastery has been successfully registered for this page';
 $string['moveleft'] = 'Move left';
 $string['moveright'] = 'Move right';
 $string['multisessionexpanded'] = 'Multiple sessions expanded';
@@ -270,30 +270,30 @@ $string['multisessionexpanded_desc'] = 'Show the "Multiple sessions" settings as
 $string['mustselectusers'] = 'Must select users to export';
 $string['newdate'] = 'New date';
 $string['newduration'] = 'New duration';
-$string['newstatusset'] = 'New set of statuses';
+$string['newstatusset'] = 'New set of statuses'; // NU
 $string['noattendanceusers'] = 'It is not possible to export any data as there are no students enrolled in the course.';
 $string['noautomark'] = 'Disabled';
-$string['noattforuser'] = 'No attendance records exist for the user';
+$string['noattforuser'] = 'No mastery records exist for the user';
 $string['nodescription'] = 'Regular class session';
 $string['noeventstoreset'] = 'There are no calendar events that require an update.';
 $string['nogroups'] = 'You can\'t add group sessions. No groups exists in course.';
-$string['noguest'] = 'Guest can\'t see attendance';
-$string['noofdaysabsent'] = 'No of days absent';
-$string['noofdaysexcused'] = 'No of days excused';
-$string['noofdayslate'] = 'No of days late';
-$string['noofdayspresent'] = 'No of days present';
+$string['noguest'] = 'Guest can\'t see mastery information';
+$string['noofdaysabsent'] = 'No of topics not mastered';
+$string['noofdaysexcused'] = 'No of days excused'; // NU
+$string['noofdayslate'] = 'No of days late'; // NU
+$string['noofdayspresent'] = 'No of topics mastered';
 $string['nosessiondayselected'] = 'No Session day selected';
 $string['nosessionexists'] = 'No Session exists for this course';
 $string['nosessionsselected'] = 'No sessions selected';
 $string['warningdeleted'] = 'Warning deleted';
-$string['warningdesc'] = 'These warnings will be automatically added to any new attendance activities. If more than one warning is triggered at exactly the same time, only the warning with the lower warning threshold will be sent.';
-$string['warningdesc_course'] = 'Warnings thresholds set here affect the absentee report and allow students and third parties to be notified.  If more than one warning is triggered at exactly the same time, only the warning with the lower warning threshold will be sent.';
+$string['warningdesc'] = 'These warnings will be automatically added to any new TutorMatch activities. If more than one warning is triggered at exactly the same time, only the warning with the lower warning threshold will be sent.';
+$string['warningdesc_course'] = 'Warnings thresholds set here affect the mastery report and allow students and third parties to be notified.  If more than one warning is triggered at exactly the same time, only the warning with the lower warning threshold will be sent.';
 $string['warnings'] = 'Warnings set';
 $string['warningupdated'] = 'Updated warnings';
 $string['notifytask'] = 'Send warnings to users';
-$string['notfound'] = 'Attendance activity not found in this course!';
+$string['notfound'] = 'TutorMatch activity not found in this course!';
 $string['notmember'] = 'not&nbsp;member';
-$string['noupgradefromthisversion'] = 'The Attendance module cannot upgrade from the version of attforblock you have installed. - please delete attforblock or upgrade it to the latest version before isntalling the new attendance module';
+$string['noupgradefromthisversion'] = 'The TutorMatch module cannot upgrade from the version of attforblock you have installed. - please delete attforblock or upgrade it to the latest version before isntalling the new TutorMatch module';
 $string['numsessions'] = 'Number of sessions';
 $string['olddate'] = 'Old date';
 $string['onlyselectedusers'] = 'Export specific users';
