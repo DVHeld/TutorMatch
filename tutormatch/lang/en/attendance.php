@@ -298,34 +298,34 @@ $string['numsessions'] = 'Number of sessions';
 $string['olddate'] = 'Old date';
 $string['onlyselectedusers'] = 'Export specific users';
 $string['overallsessions'] = 'Over all sessions'; // -----------------------------------------------
-$string['overallsessions_help'] = 'Shows statistics for all sessions including those not yet taken (past and future):
+$string['overallsessions_help'] = 'Shows statistics for all sessions including those not yet done (past and future):
     <ul>
     <li><strong>Sessions</strong>: total number of sessions.</li>
-    <li><strong>Points</strong>: points awarded based on the taken sessions.</li>
-    <li><strong>Percentage</strong>: percentage of points awarded over the maxium possible points for all sessions.</li>
+    <li><strong>Points</strong>: points awarded based on mastery.</li>
+    <li><strong>Percentage</strong>: percentage of points awarded over the maxium possible points for all topics.</li>
     </ul>';
-$string['oversessionstaken'] = 'Over taken sessions';
-$string['oversessionstaken_help'] = 'Shows statistics for sessions where attendance has been taken:
+$string['oversessionstaken'] = 'Over past sessions';
+$string['oversessionstaken_help'] = 'Shows statistics for past sessions:
     <ul>
-    <li><strong>Sessions</strong>: number of already taken sessions.</li>
-    <li><strong>Points</strong>: points awarded based on the taken sessions.</li>
-    <li><strong>Percentage</strong>: percentage of points awarded over the maxium possible points of the taken sessions.</li>
+    <li><strong>Sessions</strong>: number of past sessions.</li>
+    <li><strong>Points</strong>: points awarded based on past sessions.</li>
+    <li><strong>Percentage</strong>: percentage of points awarded on past sessions.</li>
     </ul>';
 $string['participant'] = 'Participant';
 $string['password'] = 'Password';
 $string['passwordgrp'] = 'Student password';
-$string['passwordgrp_help'] = 'If set students will be required to enter this password before they can set their own attendance status for the session. If empty, no password is required.';
-$string['passwordrequired'] = 'You must enter the session password before you can submit your attendance';
+$string['passwordgrp_help'] = 'If set students will be required to enter this password before they can set their own mastery topic. If empty, no password is required.';
+$string['passwordrequired'] = 'You must enter the session password before you can submit your mastery';
 $string['percentage'] = 'Percentage';
 $string['percentageallsessions'] = 'Percentage over all sessions';
-$string['percentagesessionscompleted'] = 'Percentage over taken sessions';
-$string['pluginadministration'] = 'Attendance administration';
-$string['pluginname'] = 'Attendance';
+$string['percentagesessionscompleted'] = 'Percentage over past sessions';
+$string['pluginadministration'] = 'TutorMatch administration';
+$string['pluginname'] = 'TutorMatch';
 $string['points'] = 'Points';
 $string['pointsallsessions'] = 'Points over all sessions';
-$string['pointssessionscompleted'] = 'Points over taken sessions';
-$string['preferences_desc'] = 'Changes to status sets will affect existing attendance sessions and may affect grading.';
-$string['priorto'] = 'The session date is prior to the course start date ({$a}) so that the new sessions scheduled before this date will be hidden (not accessible). You can change the course start date at any time (see course settings) in order to have access to earlier sessions.<br><br>Please change the session date or just click the "Add session" button again to confirm?';
+$string['pointssessionscompleted'] = 'Points over past sessions';
+$string['preferences_desc'] = 'Changes to status sets will affect existing sessions and may affect grading.';
+$string['priorto'] = 'The session date is prior to the course start date ({$a}) so that the new sessions scheduled before this date will be hidden (not accessible). You can change the course start date at any time (see course settings) in order to have access to earlier sessions.<br><br>Please change the session date or just click the "Add session" button again to confirm.';
 $string['processingfile'] = 'Processing file';
 $string['randompassword'] = 'Random password';
 $string['remark'] = 'Remark for: {$a}';
@@ -336,9 +336,9 @@ $string['repeaton'] = 'Repeat on';
 $string['repeatuntil'] = 'Repeat until';
 $string['report'] = 'Report';
 $string['required'] = 'Required*';
-$string['requiredentries'] = '  Temporary records overwrite participant attendance records';
+$string['requiredentries'] = '  Temporary records overwrite participant mastery records';
 $string['requiredentry'] = '  Temporary user merge help guide';
-$string['requiredentry_help'] = '<p align="center"><b>Attendance</b></p>
+$string['requiredentry_help'] = '<p align="center"><b>TutorMatch</b></p>
 <p align="left"><strong>Merge Accounts</strong></p>
 <p align="left">
 <table border="2" cellpadding="4">
@@ -348,23 +348,23 @@ $string['requiredentry_help'] = '<p align="center"><b>Attendance</b></p>
 <th>Action</th>
 </tr>
 <tr>
-<td>Attendance data</td>
-<td>Attendance data</td>
+<td>Mastery data</td>
+<td>Mastery data</td>
 <td>Temporary user will override Moodle user</td>
 </tr>
 <tr>
-<td>No attendance data</td>
-<td>Attendance data</td>
-<td>Temporary user attendance will be transfered to Moodle user</td>
+<td>No mastery data</td>
+<td>Mastery data</td>
+<td>Temporary user mastery will be transfered to Moodle user</td>
 </tr>
 <tr>
-<td>Attendance data</td>
-<td>No attendance data</td>
+<td>Mastery data</td>
+<td>No mastery data</td>
 <td>Temporary user will be deleted</td>
 </tr>
 <tr>
-<td>No attendance data</td>
-<td>No attendance data</td>
+<td>No mastery data</td>
+<td>No mastery data</td>
 <td>Temporary user will be deleted</td>
 </tr>
 </table>
@@ -372,17 +372,17 @@ $string['requiredentry_help'] = '<p align="center"><b>Attendance</b></p>
 </p>
 <p align="left"><strong>Temporay user will be deleted in all cases after merge action</strong></p>';
 $string['requiresubnet'] = 'Require network address';
-$string['requiresubnet_help'] = 'Attendance recording may be restricted to particular subnets by specifying a comma-separated list of partial or full IP addresses.';
+$string['requiresubnet_help'] = 'Mastery recording may be restricted to particular subnets by specifying a comma-separated list of partial or full IP addresses.';
 $string['resetcalendar'] = 'Reset calendar';
 $string['resetcaledarcreate'] = 'Calendar events have been enabled but a number of existing sessions do not have events. Do you want to create calendar events for all existing sessions?';
 $string['resetcaledardelete'] = 'Calendar events have been disabled but a number of existing sessions have events that should be deleted. Do you want to delete all existing events?';
-$string['resetdescription'] = 'Remember that deleting attendance data will erase information from database. You can just hide older sessions having changed start date of course!';
+$string['resetdescription'] = 'Remember that deleting mastery data will erase information from database. You can just hide older sessions by changing start date of the course!';
 $string['resetstatuses'] = 'Reset statuses to default';
 $string['restoredefaults'] = 'Restore defaults';
 $string['resultsperpage'] = 'Results per page';
 $string['resultsperpage_desc'] = 'Number of students displayed on a page';
-$string['save'] = 'Save attendance';
-$string['search:activity'] = 'Attendance - activity information';
+$string['save'] = 'Save mastery';
+$string['search:activity'] = 'TutorMatch - activity information';
 $string['session'] = 'Session';
 $string['session_help'] = 'Session';
 $string['sessionadded'] = 'Session successfully added';
@@ -390,12 +390,12 @@ $string['sessionalreadyexists'] = 'Session already exists for this date';
 $string['sessiondate'] = 'Date';
 $string['sessiondays'] = 'Session Days';
 $string['sessiondeleted'] = 'Session successfully deleted';
-$string['sessionduplicate'] = 'A duplicate session exists for course: {$a->course} in attendance: {$a->activity}';
+$string['sessionduplicate'] = 'A duplicate session exists for course: {$a->course} in TutorMatch: {$a->activity}';
 $string['sessionexist'] = 'Session not added (already exists)!';
 $string['sessiongenerated'] = 'One session was successfully generated';
 $string['sessionunknowngroup'] = 'A session specifies unknown group(s): {$a}';
 $string['sessions'] = 'Sessions';
-$string['sessionscompleted'] = 'Taken sessions';
+$string['sessionscompleted'] = 'Past sessions';
 $string['sessionsgenerated'] = '{$a} sessions were successfully generated';
 $string['sessionsids'] = 'IDs of sessions: '; // -----------------------------------------------
 $string['sessionsnotfound'] = 'There is no sessions in the selected timespan';
