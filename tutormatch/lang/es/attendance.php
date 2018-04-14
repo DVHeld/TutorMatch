@@ -304,100 +304,100 @@ $string['overallsessions_help'] = 'Muestra estadísticas para todas las sesiones
     <li><strong>Puntos</strong>: puntos otorgados en base a dominio.</li>
     <li><strong>Porcentaje</strong>: porcentaje de puntos otorgados respecto del número máximo de puntos para todos los temas.</li>
     </ul>';
-$string['oversessionstaken'] = 'Over taken sessions';
-$string['oversessionstaken_help'] = 'Shows statistics for sessions where attendance has been taken:
+$string['oversessionstaken'] = 'En las pasadas'; 
+$string['oversessionstaken_help'] = 'Muestra estadísticas para las sesiones que ya se han llevado a cabo:
     <ul>
-    <li><strong>Sessions</strong>: number of already taken sessions.</li>
-    <li><strong>Points</strong>: points awarded based on the taken sessions.</li>
-    <li><strong>Percentage</strong>: percentage of points awarded over the maxium possible points of the taken sessions.</li>
+    <li><strong>Sesiones</strong>:número de sesiones llevadas a cabo.</li>
+    <li><strong>Puntos</strong>: puntos otorgados en base al dominio.</li>
+    <li><strong>Porcentaje</strong>: porcentaje de puntos otorgados en las sesiones ya hechas.</li>
     </ul>';
-$string['participant'] = 'Participant';
-$string['password'] = 'Password';
-$string['passwordgrp'] = 'Student password';
-$string['passwordgrp_help'] = 'If set students will be required to enter this password before they can set their own attendance status for the session. If empty, no password is required.';
-$string['passwordrequired'] = 'You must enter the session password before you can submit your attendance';
-$string['percentage'] = 'Percentage';
-$string['percentageallsessions'] = 'Percentage over all sessions';
-$string['percentagesessionscompleted'] = 'Percentage over taken sessions';
-$string['pluginadministration'] = 'Attendance administration';
-$string['pluginname'] = 'Attendance';
-$string['points'] = 'Points';
-$string['pointsallsessions'] = 'Points over all sessions';
-$string['pointssessionscompleted'] = 'Points over taken sessions';
-$string['preferences_desc'] = 'Changes to status sets will affect existing attendance sessions and may affect grading.';
-$string['priorto'] = 'The session date is prior to the course start date ({$a}) so that the new sessions scheduled before this date will be hidden (not accessible). You can change the course start date at any time (see course settings) in order to have access to earlier sessions.<br><br>Please change the session date or just click the "Add session" button again to confirm?';
-$string['processingfile'] = 'Processing file';
-$string['randompassword'] = 'Random password';
-$string['remark'] = 'Remark for: {$a}';
-$string['remarks'] = 'Remarks';
-$string['repeatasfollows'] = 'Repeat the session above as follows';
-$string['repeatevery'] = 'Repeat every';
-$string['repeaton'] = 'Repeat on';
-$string['repeatuntil'] = 'Repeat until';
-$string['report'] = 'Report';
-$string['required'] = 'Required*';
-$string['requiredentries'] = '  Temporary records overwrite participant attendance records';
-$string['requiredentry'] = '  Temporary user merge help guide';
-$string['requiredentry_help'] = '<p align="center"><b>Attendance</b></p>
-<p align="left"><strong>Merge Accounts</strong></p>
+$string['participant'] = 'Participante';
+$string['password'] = 'Contraseña';
+$string['passwordgrp'] = 'Contraseña de estudiante';
+$string['passwordgrp_help'] = 'Si se crea los estudiantes tendrán que ingresar esta contraseña antes de poder ingresar su dominio para el tema. Si se deja vacío no se requeriráuna contraseña.';
+$string['passwordrequired'] = 'Debe ingresar la contraseña de estudiante antes de ingresar su dominio para el tema';
+$string['percentage'] = 'Porcentaje';
+$string['percentageallsessions'] = 'Porcentaje en todas las sesiones';
+$string['percentagesessionscompleted'] = 'Porcentaja en las sesiones pasadas';
+$string['pluginadministration'] = 'Administración de TutorMatch';
+$string['pluginname'] = 'TutorMatch';
+$string['points'] = 'Puntos';
+$string['pointsallsessions'] = 'Puntos en todas las sesiones';
+$string['pointssessionscompleted'] = 'Puntos en las sesiones pasadas';
+$string['preferences_desc'] = 'Cambios en los conjuntos de estados afectarán a las sesiones existentesy podrían afectar las notas.'; // NU
+$string['priorto'] = 'La fecha de la sesión es anterior a la de inicio del curso ({$a}) de forma qu las nuevas sesiones agendadas antes de esta fecha estarán ocultas (no accesibles). Puede cambiar la fecha de inicio del curso en cualquier momento (ver opciones de curso) para tener acceso a sesiones anteriores.<br><br>Por favor cambioe la fecha de la sesión o simplemente presione nuevamente el botón "Agregar sesión" para confirmar.';
+$string['processingfile'] = 'Procesando archivo';
+$string['randompassword'] = 'Contraseña al azar';
+$string['remark'] = 'Comentario para: {$a}';
+$string['remarks'] = 'Comentarios';
+$string['repeatasfollows'] = 'Repetir la sesión de arriba de la forma siguiente';
+$string['repeatevery'] = 'Repetir cada';
+$string['repeaton'] = 'Repetir los';
+$string['repeatuntil'] = 'Repetir hasta';
+$string['report'] = 'Reporte';
+$string['required'] = 'Obligatorio*';
+$string['requiredentries'] = '  Registros temporales sobreescriben los registros de dominio de los participantes';
+$string['requiredentry'] = '  Guía de ayuda de combinación de usuario temporal';
+$string['requiredentry_help'] = '<p align="center"><b>TutorMatch</b></p>
+<p align="left"><strong>Combinar cuentas</strong></p>
 <p align="left">
 <table border="2" cellpadding="4">
 <tr>
-<th>Moodle User</th>
-<th>Temporary User</th>
-<th>Action</th>
+<th>Usuario Moodle</th>
+<th>Usuario Temporal</th>
+<th>Acción</th>
 </tr>
 <tr>
-<td>Attendance data</td>
-<td>Attendance data</td>
-<td>Temporary user will override Moodle user</td>
+<td>Datos de dominio</td>
+<td>Datos de dominio</td>
+<td>El usuario temporal anulará al usuario Moodle</td>
 </tr>
 <tr>
-<td>No attendance data</td>
-<td>Attendance data</td>
-<td>Temporary user attendance will be transfered to Moodle user</td>
+<td>No hay datos de dominio</td>
+<td>Datos de dominio</td>
+<td>Los datos de dominio del usuario temporal serán transferidos al usuario Moodle</td>
 </tr>
 <tr>
-<td>Attendance data</td>
-<td>No attendance data</td>
-<td>Temporary user will be deleted</td>
+<td>Datos de dominio</td>
+<td>No hay datos de dominio</td>
+<td>El usuario temporal será eliminado</td>
 </tr>
 <tr>
-<td>No attendance data</td>
-<td>No attendance data</td>
-<td>Temporary user will be deleted</td>
+<td>No hay datos de dominio</td>
+<td>No hay datos de dominio</td>
+<td>El usuario temporal será eliminado</td>
 </tr>
 </table>
 
 </p>
-<p align="left"><strong>Temporay user will be deleted in all cases after merge action</strong></p>';
-$string['requiresubnet'] = 'Require network address';
-$string['requiresubnet_help'] = 'Attendance recording may be restricted to particular subnets by specifying a comma-separated list of partial or full IP addresses.';
-$string['resetcalendar'] = 'Reset calendar';
-$string['resetcaledarcreate'] = 'Calendar events have been enabled but a number of existing sessions do not have events. Do you want to create calendar events for all existing sessions?';
-$string['resetcaledardelete'] = 'Calendar events have been disabled but a number of existing sessions have events that should be deleted. Do you want to delete all existing events?';
-$string['resetdescription'] = 'Remember that deleting attendance data will erase information from database. You can just hide older sessions having changed start date of course!';
-$string['resetstatuses'] = 'Reset statuses to default';
-$string['restoredefaults'] = 'Restore defaults';
-$string['resultsperpage'] = 'Results per page';
-$string['resultsperpage_desc'] = 'Number of students displayed on a page';
-$string['save'] = 'Save attendance';
-$string['search:activity'] = 'Attendance - activity information';
-$string['session'] = 'Session';
-$string['session_help'] = 'Session';
-$string['sessionadded'] = 'Session successfully added';
-$string['sessionalreadyexists'] = 'Session already exists for this date';
-$string['sessiondate'] = 'Date';
-$string['sessiondays'] = 'Session Days';
-$string['sessiondeleted'] = 'Session successfully deleted';
-$string['sessionduplicate'] = 'A duplicate session exists for course: {$a->course} in attendance: {$a->activity}';
-$string['sessionexist'] = 'Session not added (already exists)!';
-$string['sessiongenerated'] = 'One session was successfully generated';
-$string['sessionunknowngroup'] = 'A session specifies unknown group(s): {$a}';
-$string['sessions'] = 'Sessions';
-$string['sessionscompleted'] = 'Taken sessions';
-$string['sessionsgenerated'] = '{$a} sessions were successfully generated';
-$string['sessionsids'] = 'IDs of sessions: '; // -----------------------------------------------
+<p align="left"><strong>El usuario temporal será eliminado en todos los casos luego de la acción de combinación</strong></p>';
+$string['requiresubnet'] = 'Requerir dirección de red';
+$string['requiresubnet_help'] = 'El registro de dominio puede ser restringido a subredes particulares especificando una lista separada por comas de direcciones IP parciales o completas.';
+$string['resetcalendar'] = 'Restaurar calendario';
+$string['resetcaledarcreate'] = 'Los eventos de calendario han sido habilitados pero un número de sesiones existentes no tienen eventos. ¿Desea crear eventos de calendario para todas las sesiones existentes?';
+$string['resetcaledardelete'] = 'Los eventos de calendario han sido deshabilitados pero un número de sesiones existentes tienen eventos que deberían haber sido eliminados. ¿Desea eliminar todos los eventos existentes?';
+$string['resetdescription'] = 'Recuerde que eliminar los datos de dominio eliminará información de la base de datos. ¡Puede simplemente ocultar sesiones antiguas cambiando la fecha de inicio del curso!';
+$string['resetstatuses'] = 'Restaurar estados a valores por defecto';
+$string['restoredefaults'] = 'Restaurar valores por defecto';
+$string['resultsperpage'] = 'Resultados por página';
+$string['resultsperpage_desc'] = 'Número de estudiantes desplegados en una página';
+$string['save'] = 'Guardar dominio';
+$string['search:activity'] = 'TutorMatch - información de actividad';
+$string['session'] = 'Sesión';
+$string['session_help'] = 'Sesión';
+$string['sessionadded'] = 'Sesión exitosamente agregada';
+$string['sessionalreadyexists'] = 'Una sesión ya existe para esta fecha';
+$string['sessiondate'] = 'Fecha';
+$string['sessiondays'] = 'Días de Sesión';
+$string['sessiondeleted'] = 'Sesión exitosamente eliminada';
+$string['sessionduplicate'] = 'Una sesión duplicada existe para el curso: {$a->course} en TutorMatch: {$a->activity}';
+$string['sessionexist'] = '¡Sesión no agregada (ya existe)!';
+$string['sessiongenerated'] = 'Una sesión fue generada con éxito';
+$string['sessionunknowngroup'] = 'Una sesión especifica grupo(s) desconocido(s): {$a}';
+$string['sessions'] = 'Sesiones';
+$string['sessionscompleted'] = 'Sesiones pasadas';
+$string['sessionsgenerated'] = '{$a} sesiones fueron generadas exitosamente';
+$string['sessionsids'] = 'IDs de sesiones: '; // -----------------------------------------------
 $string['sessionsnotfound'] = 'There is no sessions in the selected timespan';
 $string['sessionstartdate'] = 'Session start date';
 $string['sessionstotal'] = 'Total number of sessions';
