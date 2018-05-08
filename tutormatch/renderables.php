@@ -120,9 +120,13 @@ class attendance_tabs implements renderable {
                     get_string('warnings', 'attendance'));
             }
         }
-        if (has_capability('mod/attendance:managetemporaryusers', $context)) {
-            $toprow[] = new tabobject(self::TAB_TEMPORARYUSERS, $this->att->url_managetemp()->out(),
-                            get_string('tempusers', 'attendance'));
+        //if (has_capability('mod/attendance:managetemporaryusers', $context)) {
+        //    $toprow[] = new tabobject(self::TAB_TEMPORARYUSERS, $this->att->url_managetemp()->out(),
+        //                    get_string('tempusers', 'attendance'));
+        //}
+        if (has_capability('mod/attendance:managetopics', $context)) {
+            $toprow[] = new tabobject(self::TAB_TOPICS, $this->att->url_managetopics()->out(),
+                            get_string('topics', 'attendance'));
         }
         if ($this->currenttab == self::TAB_UPDATE && has_capability('mod/attendance:manageattendances', $context)) {
             $toprow[] = new tabobject(self::TAB_UPDATE,

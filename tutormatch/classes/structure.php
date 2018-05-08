@@ -316,6 +316,16 @@ class mod_attendance_structure {
     }
 
     /**
+     * Get manage topics url.
+     * @param array $params optional
+     * @return moodle_url of topics.php for TutorMatch instance
+     */
+    public function url_managetopics($params=array()) {
+        $params = array_merge(array('id' => $this->cm->id), $params);
+        return new moodle_url('/mod/attendance/topics.php', $params);
+    }
+
+    /**
      * Get temp delete url.
      *
      * @param array $params optional
