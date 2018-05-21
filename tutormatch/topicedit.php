@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Attendance tempedit
+ * TutorMatch topicedit
  *
- * @package    mod_attendance
+ * @package    mod_tutormatch
  * @copyright  2018 Dusan Vilicic
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -78,14 +78,13 @@ if ($action == 'delete') {
     } else {
 
         $info = (object)array(
-            'fullname' => $topic->fullname,
-            'email' => $tempuser->email,
+            'name' => $topic->name
         );
-        $msg = get_string('confirmdeleteuser', 'attendance', $info);
+        $msg = get_string('confirmdeletetopic', 'attendance', $info);
         $continue = new moodle_url($PAGE->url, array('confirm' => 1, 'sesskey' => sesskey()));
 
         echo $output->header();
-        echo $output->confirm($msg, $continue, $att->url_managetemp());
+        echo $output->confirm($msg, $continue, $att->url_managetopics());
         echo $output->footer();
 
         die();
@@ -94,29 +93,32 @@ if ($action == 'delete') {
 
 $formdata = new stdClass();
 $formdata->id = $cm->id;
-$formdata->tname = $tempuser->fullname;
-$formdata->userid = $tempuser->id;
-$formdata->temail = $tempuser->email;
+$formdata->tname = $topic->name;
+$formdata->tid = $topic->id;
+//$formdata->temail = $tempuser->email;
 
+//$mform = new tempedit_form();
 $mform = new tempedit_form();
 $mform->set_data($formdata);
 
 if ($mform->is_cancelled()) {
-    redirect($att->url_managetemp());
-} else if ($tempuser = $mform->get_data()) {
+    redirect($att->url_managetopics());
+} else if ($topic = $mform->get_data()) {
     global $DB;
-    $updateuser = new stdClass();
-    $updateuser->id = $tempuser->userid;
-    $updateuser->fullname = $tempuser->tname;
-    $updateuser->email = $tempuser->temail;
-    $DB->update_record('attendance_tempusers', $updateuser);
-    redirect($att->url_managetemp());
+    $updatetopic = new stdClass();
+    $updatetopic->id = $topic->tid;
+    $updatetopic->name = $topic->tname;
+    //$updatetopic->email = $tempuser->temail;
+    //$DB->update_record('attendance_tempusers', $updateuser);
+    $DB->update_record('attendance_topics', $updatetopic);
+    redirect($att->url_managetopics());
 }
 
-$tabs = new attendance_tabs($att, attendance_tabs::TAB_TEMPORARYUSERS);
+//$tabs = new attendance_tabs($att, attendance_tabs::TAB_TEMPORARYUSERS);
+$tabs = new attendance_tabs($att, attendance_tabs::TAB_TOPICS);
 
 echo $output->header();
-echo $output->heading(get_string('tempusersedit', 'attendance').' : '.format_string($course->fullname));
+echo $output->heading(get_string('edittopic', 'attendance').' : '.format_string($course->fullname));
 echo $output->render($tabs);
 $mform->display();
 echo $output->footer($course);
