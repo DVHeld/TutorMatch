@@ -49,17 +49,20 @@ class topicedit_form extends moodleform {
         $mform->addElement('hidden', 'id', 0);
         $mform->setType('id', PARAM_INT);
 
-        $mform->addElement('header', 'attheader', get_string('tempusersedit', 'attendance'));
-        $mform->addElement('text', 'tname', get_string('tusername', 'attendance'));
+        //$mform->addElement('header', 'attheader', get_string('tempusersedit', 'attendance'));
+        $mform->addElement('header', 'attheader', get_string('edittopic', 'attendance'));
+        //$mform->addElement('text', 'tname', get_string('tusername', 'attendance'));
+        $mform->addElement('text', 'tname', get_string('topicname', 'attendance'));
         $mform->addRule('tname', 'Required', 'required', null, 'client');
         $mform->setType('tname', PARAM_TEXT);
 
-        $mform->addElement('text', 'temail', get_string('tuseremail', 'attendance'));
-        $mform->addRule('temail', 'Email', 'email', null, 'client');
-        $mform->setType('temail', PARAM_EMAIL);
+        //$mform->addElement('text', 'temail', get_string('tuseremail', 'attendance'));
+        //$mform->addRule('temail', 'Email', 'email', null, 'client');
+        //$mform->setType('temail', PARAM_EMAIL);
 
         $buttonarray = array(
-            $mform->createElement('submit', 'submitbutton', get_string('edituser', 'attendance')),
+            //$mform->createElement('submit', 'submitbutton', get_string('edituser', 'attendance')),
+            $mform->createElement('submit', 'submitbutton', get_string('edittopic', 'attendance')),
             $mform->createElement('cancel'),
         );
         $mform->addGroup($buttonarray, 'buttonar', '', array(' '), false);
@@ -83,9 +86,9 @@ class topicedit_form extends moodleform {
     public function validation($data, $files) {
         $errors = parent::validation($data, $files);
 
-        if ($err = mod_attendance_structure::check_existing_email($data['temail'], $data['userid'])) {
-            $errors['temail'] = $err;
-        }
+        //if ($err = mod_attendance_structure::check_existing_email($data['temail'], $data['userid'])) {
+        //    $errors['temail'] = $err;
+        //}
         return $errors;
     }
 }

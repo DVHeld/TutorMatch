@@ -27,7 +27,7 @@ require_once(dirname(__FILE__).'/../../config.php');
 global $CFG, $DB, $PAGE, $OUTPUT;
 require_once($CFG->dirroot.'/mod/attendance/locallib.php');
 //require_once($CFG->dirroot.'/mod/attendance/tempedit_form.php');
-require_once($CFG->dirroot.'/mod/attendance/topicedit_form.php'); // TODO topicedit_form.php
+require_once($CFG->dirroot.'/mod/attendance/topicedit_form.php');
 
 $id = required_param('id', PARAM_INT);
 //$userid = required_param('userid', PARAM_INT);
