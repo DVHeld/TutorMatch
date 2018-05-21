@@ -18,7 +18,7 @@
  * Topic management.
  *
  * @package    mod_tutormatch
- * @copyright  2013 Davo Smith, Synergy Learning
+ * @copyright  2018 Dusan Vilicic
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -128,7 +128,8 @@ function attendance_print_topics($topics, mod_attendance_structure $att) {
         echo '<td>'.format_string($topic->name).'</td>';
         echo '<td>'.userdate($topic->created, get_string('strftimedatetime')).'</td>';
         $params = array('userid' => $topic->id);
-        $editlink = html_writer::link($att->url_tempedit($params), get_string('edittopic', 'attendance'));
+        //$editlink = html_writer::link($att->url_tempedit($params), get_string('edittopic', 'attendance'));
+        $editlink = html_writer::link($att->url_topicedit($params), get_string('edittopic', 'attendance'));
         $deletelink = html_writer::link($att->url_tempdelete($params), get_string('deletetopic', 'attendance'));
         //$mergelink = html_writer::link($att->url_tempmerge($params), get_string('mergeuser', 'attendance'));
         //echo '<td>'.$editlink.' | '.$deletelink.' | '.$mergelink.'</td>';

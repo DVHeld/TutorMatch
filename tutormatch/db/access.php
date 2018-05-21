@@ -132,6 +132,19 @@ $capabilities = array(
             'manager' => CAP_ALLOW
         )
     ),
+
+    // Allow teachers to manage topics.
+    'mod/attendance:managetopics' => array(
+        'riskbitmask' => RISK_DATALOSS,
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_MODULE,
+        'archetypes' => array(
+            'teacher' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW
+        )
+    ),
+
     // Allow access to site level reports.
     'mod/attendance:viewsummaryreports' => array(
         'riskbitmask' => RISK_PERSONAL,

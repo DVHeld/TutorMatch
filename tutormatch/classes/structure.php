@@ -348,6 +348,17 @@ class mod_attendance_structure {
     }
 
     /**
+     * Get topic edit url.
+     *
+     * @param array $params optional
+     * @return moodle_url of topicedit.php for attendance instance
+     */
+    public function url_topicedit($params=array()) {
+        $params = array_merge(array('id' => $this->cm->id), $params);
+        return new moodle_url('/mod/attendance/topicedit.php', $params);
+    }
+
+    /**
      * Get temp merge url
      *
      * @param array $params optional
