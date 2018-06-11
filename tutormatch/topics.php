@@ -55,29 +55,29 @@ $formdata = (object)array(
 $mform = new temp_form();
 $mform->set_data($formdata);
 
-/* if ($data = $mform->get_data()) {
-    // Create temp user in main user table.
-    $user = new stdClass();
-    $user->auth = 'manual';
-    $user->confirmed = 1;
-    $user->deleted = 1;
-    $user->email = time().'@ghost.user.de';
-    $user->username = time().'@ghost.user.de';
-    $user->idnumber = 'tempghost';
-    $user->mnethostid = $CFG->mnet_localhost_id;
-    $studentid = $DB->insert_record('user', $user);
+if ($data = $mform->get_data()) {
+    // Create topic in main topic table.
+    $topic = new stdClass();
+    $topic->auth = 'manual';
+    $topic->confirmed = 1;
+    $topic->deleted = 1;
+    $topic->name = $data->tname;
+    $topic->courseid = $COURSE->id;
+    $topic->created = time();
+    //$user->email = time().'@ghost.user.de';
+    //$user->username = time().'@ghost.user.de';
+    $topic->idnumber = 'tempghost';
+    //$user->mnethostid = $CFG->mnet_localhost_id;
+    $topicid = $DB->insert_record('topic', $topic);
 
     // Create the temporary user record.
-    $newtempuser = new stdClass();
-    $newtempuser->fullname = $data->tname;
-    $newtempuser->courseid = $COURSE->id;
-    $newtempuser->email = $data->temail;
-    $newtempuser->created = time();
-    $newtempuser->studentid = $studentid;
-    $DB->insert_record('attendance_tempusers', $newtempuser);
+    //$newtopic = new stdClass();
+    //$newtempuser->email = $data->temail;
+    //$newtopic->topicid = $topicid;
+    //$DB->insert_record('attendance_topic', $newtopic);
 
     redirect($att->url_managetopics());
-} */
+}
 
 // Output starts here.
 echo $output->header();

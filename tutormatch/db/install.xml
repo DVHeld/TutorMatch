@@ -115,6 +115,22 @@
         <INDEX NAME="studentid" UNIQUE="true" FIELDS="studentid"/>
       </INDEXES>
     </TABLE>
+    <TABLE NAME="attendance_topics" COMMENT="Stores topics details">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="topicid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="topic id"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="course id"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="topic name"/>
+        <FIELD NAME="created" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="unix timestamp for topic creation"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="courseid" UNIQUE="false" FIELDS="courseid"/>
+        <INDEX NAME="topicid" UNIQUE="true" FIELDS="topicid"/>
+      </INDEXES>
+    </TABLE>
     <TABLE NAME="attendance_warning" COMMENT="Warning configuration">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
