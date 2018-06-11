@@ -513,3 +513,4 @@ $string['topicname'] = 'Nombre';
 $string['edittopic'] = 'Editar tema';
 $string['deletetopic'] = 'Eliminar tema';
 $string['confirmdeletetopic'] = '¿Está seguro que desea eliminar el tema \'{$a->name}\'?<br/>Todos sus registros de TutorMatch asociados serán eliminados permanentemente.';
+$string['topicaddform'] = 'Agregar tema';

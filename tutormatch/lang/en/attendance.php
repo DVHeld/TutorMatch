@@ -513,3 +513,4 @@ $string['topicname'] = 'Name';
 $string['edittopic'] = 'Edit topic';
 $string['deletetopic'] = 'Delete topic';
 $string['confirmdeletetopic'] = 'Are you sure you want to delete topic \'{$a->name}\'?<br/>All of its related TutorMatch records will be permanently deleted.';
+$string['topicaddform'] = 'Add topic';
