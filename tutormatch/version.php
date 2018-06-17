@@ -17,15 +17,15 @@
 /**
  * Version information
  *
- * @package    mod_attendance
- * @copyright  2011 Artem Andreev <andreev.artem@gmail.com>
+ * @package    mod_tutormatch
+ * @copyright  2018 Dusan Vilicic <dvhled@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2017112004;
+$plugin->version  = 2018061603;
 $plugin->requires = 2017102700; // Requires 3.4.
-$plugin->release = '3.4.3';
+$plugin->release = '0.0.1';
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->cron     = 0;
-$plugin->component = 'mod_attendance';
+$plugin->component = 'mod_tutormatch';
