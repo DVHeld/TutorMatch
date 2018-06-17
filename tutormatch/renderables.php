@@ -48,7 +48,9 @@ class attendance_tabs implements renderable {
     /** Preferences tab */
     const TAB_PREFERENCES   = 5;
     /** Temp users tab */
-    const TAB_TEMPORARYUSERS = 6; // Tab for managing temporary users.
+    const TAB_TOPICS = 6; // Tab for managing temporary users.
+    /** Temp users tab */
+    // const TAB_TEMPORARYUSERS = 6; // Tab for managing temporary users.
     /** Update tab */
     const TAB_UPDATE        = 7;
     /** Warnings tab */

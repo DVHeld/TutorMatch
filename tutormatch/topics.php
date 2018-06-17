@@ -52,7 +52,8 @@ $tabs = new attendance_tabs($att, attendance_tabs::TAB_TOPICS);
 $formdata = (object)array(
     'id' => $cm->id,
 );
-$mform = new temp_form();
+//$mform = new temp_form();
+$mform = new topic_form();
 $mform->set_data($formdata);
 
 if ($data = $mform->get_data()) {
@@ -61,12 +62,12 @@ if ($data = $mform->get_data()) {
     $topic->auth = 'manual';
     $topic->confirmed = 1;
     $topic->deleted = 1;
-    $topic->name = $data->tname;
     $topic->courseid = $COURSE->id;
+    $topic->name = $data->tname;
     $topic->created = time();
     //$user->email = time().'@ghost.user.de';
     //$user->username = time().'@ghost.user.de';
-    $topic->idnumber = 'tempghost';
+    //$topic->idnumber = 'tempghost';
     //$user->mnethostid = $CFG->mnet_localhost_id;
     $topicid = $DB->insert_record('topic', $topic);
 
