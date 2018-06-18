@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="mod/attendance/db" VERSION="20180617" COMMENT="XMLDB file for Moodle mod/attendance"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+<XMLDB PATH="mod/attendance/db" VERSION="20170620" COMMENT="XMLDB file for Moodle mod/attendance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
   <TABLES>
     <TABLE NAME="attendance" COMMENT="Attendance module table">
@@ -115,6 +115,22 @@
         <INDEX NAME="studentid" UNIQUE="true" FIELDS="studentid"/>
       </INDEXES>
     </TABLE>
+    <TABLE NAME="attendance_topics" COMMENT="Stores topics details">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="topicid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="topic id"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="course id"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="topic name"/>
+        <FIELD NAME="created" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="unix timestamp for topic creation"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="courseid" UNIQUE="false" FIELDS="courseid"/>
+        <INDEX NAME="topicid" UNIQUE="true" FIELDS="topicid"/>
+      </INDEXES>
+    </TABLE>
     <TABLE NAME="attendance_warning" COMMENT="Warning configuration">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
@@ -145,22 +161,6 @@
       </KEYS>
       <INDEXES>
         <INDEX NAME="notifyid_userid" UNIQUE="false" FIELDS="notifyid, userid"/>
-      </INDEXES>
-    </TABLE>
-    <TABLE NAME="attendance_topics" COMMENT="Stores topics details">
-      <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
-        <FIELD NAME="topicid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="topic id"/>
-        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="course id"/>
-        <FIELD NAME="name" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="topic name"/>
-        <FIELD NAME="created" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="unix timestamp for topic creation"/>
-      </FIELDS>
-      <KEYS>
-        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
-      </KEYS>
-      <INDEXES>
-        <INDEX NAME="topicid" UNIQUE="true" FIELDS="topicid" COMMENT="topic id"/>
-        <INDEX NAME="courseid" UNIQUE="true" FIELDS="courseid" COMMENT="course id"/>
       </INDEXES>
     </TABLE>
   </TABLES>

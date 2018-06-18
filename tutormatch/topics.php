@@ -69,7 +69,7 @@ if ($data = $mform->get_data()) {
     //$user->username = time().'@ghost.user.de';
     //$topic->idnumber = 'tempghost';
     //$user->mnethostid = $CFG->mnet_localhost_id;
-    $topicid = $DB->insert_record('topic', $topic);
+    $topicid = $DB->insert_record('attendance_topics', $topic);
 
     // Create the temporary user record.
     //$newtopic = new stdClass();
