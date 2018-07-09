@@ -44,8 +44,8 @@ class topicedit_form extends moodleform {
 
         $mform = $this->_form;
 
-        $mform->addElement('hidden', 'userid', 0);
-        $mform->setType('userid', PARAM_INT);
+        $mform->addElement('hidden', 'topicid', 0);
+        $mform->setType('topicid', PARAM_INT);
         $mform->addElement('hidden', 'id', 0);
         $mform->setType('id', PARAM_INT);
 

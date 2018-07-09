@@ -86,7 +86,6 @@ echo $output->heading(get_string('topics', 'attendance').' : '.format_string($co
 echo $output->render($tabs);
 $mform->display();
 
-// Replace with topics
 //$tempusers = $DB->get_records('attendance_tempusers', array('courseid' => $course->id), 'fullname, email');
 $topics = $DB->get_records('attendance_topics', array('courseid' => $course->id), 'name');
 
@@ -128,7 +127,7 @@ function attendance_print_topics($topics, mod_attendance_structure $att) {
         $even = !$even;
         echo '<td>'.format_string($topic->name).'</td>';
         echo '<td>'.userdate($topic->created, get_string('strftimedatetime')).'</td>';
-        $params = array('userid' => $topic->id);
+        $params = array('topicid' => $topic->id);
         //$editlink = html_writer::link($att->url_tempedit($params), get_string('edittopic', 'attendance'));
         $editlink = html_writer::link($att->url_topicedit($params), get_string('edittopic', 'attendance'));
         $deletelink = html_writer::link($att->url_tempdelete($params), get_string('deletetopic', 'attendance'));

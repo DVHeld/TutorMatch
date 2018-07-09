@@ -98,7 +98,7 @@ $formdata->tid = $topic->id;
 //$formdata->temail = $tempuser->email;
 
 //$mform = new tempedit_form();
-$mform = new tempedit_form();
+$mform = new topicedit_form();
 $mform->set_data($formdata);
 
 if ($mform->is_cancelled()) {
