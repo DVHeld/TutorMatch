@@ -94,7 +94,7 @@ if ($action == 'delete') {
 $formdata = new stdClass();
 $formdata->id = $cm->id;
 $formdata->tname = $topic->name;
-$formdata->tid = $topic->id;
+$formdata->topicid = $topic->id;
 //$formdata->temail = $tempuser->email;
 
 //$mform = new tempedit_form();
@@ -106,7 +106,7 @@ if ($mform->is_cancelled()) {
 } else if ($topic = $mform->get_data()) {
     global $DB;
     $updatetopic = new stdClass();
-    $updatetopic->id = $topic->tid;
+    $updatetopic->id = $topic->id;
     $updatetopic->name = $topic->tname;
     //$updatetopic->email = $tempuser->temail;
     //$DB->update_record('attendance_tempusers', $updateuser);
