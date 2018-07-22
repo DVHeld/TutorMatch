@@ -130,7 +130,8 @@ function attendance_print_topics($topics, mod_attendance_structure $att) {
         $params = array('topicid' => $topic->id);
         //$editlink = html_writer::link($att->url_tempedit($params), get_string('edittopic', 'attendance'));
         $editlink = html_writer::link($att->url_topicedit($params), get_string('edittopic', 'attendance'));
-        $deletelink = html_writer::link($att->url_tempdelete($params), get_string('deletetopic', 'attendance'));
+        //$deletelink = html_writer::link($att->url_tempdelete($params), get_string('deletetopic', 'attendance'));
+        $deletelink = html_writer::link($att->url_topicdelete($params), get_string('deletetopic', 'attendance'));
         //$mergelink = html_writer::link($att->url_tempmerge($params), get_string('mergeuser', 'attendance'));
         //echo '<td>'.$editlink.' | '.$deletelink.' | '.$mergelink.'</td>';
         echo '<td>'.$editlink.' | '.$deletelink.'</td>';

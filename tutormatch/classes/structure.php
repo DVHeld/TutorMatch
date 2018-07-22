@@ -337,6 +337,17 @@ class mod_attendance_structure {
     }
 
     /**
+     * Get topic delete url.
+     *
+     * @param array $params optional
+     * @return moodle_url of topicdelete.php for TutorMatch instance
+     */
+    public function url_topicdelete($params=array()) {
+        $params = array_merge(array('id' => $this->cm->id, 'action' => 'delete'), $params);
+        return new moodle_url('/mod/attendance/topicedit.php', $params);
+    }
+
+    /**
      * Get temp edit url.
      *
      * @param array $params optional

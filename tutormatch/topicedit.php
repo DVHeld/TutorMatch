@@ -47,7 +47,8 @@ $params = array('topicid' => $topic->id);
 if ($action) {
     $params['action'] = $action;
 }
-$PAGE->set_url($att->url_tempedit($params));
+//$PAGE->set_url($att->url_tempedit($params));
+$PAGE->set_url($att->url_topicedit($params));
 
 require_login($course, true, $cm);
 $context = context_module::instance($cm->id);
@@ -65,13 +66,13 @@ if ($action == 'delete') {
     if (optional_param('confirm', false, PARAM_BOOL)) {
         require_sesskey();
 
-        // Remove the user from the grades table, the attendance log and the tempusers table.
-        // TODO: Remove topic from the grades table, the mastery log and the topics table.
+        // Remove topic from the grades table, the mastery log and the topics table.
         //$DB->delete_records('grade_grades', array('userid' => $tempuser->studentid));
-        $DB->delete_records('grade_grades', array('topicid' => $topic->id));
         //$DB->delete_records('attendance_log', array('studentid' => $tempuser->studentid));
-        $DB->delete_records('mastery_log', array('topicid' => $topic->id));
         //$DB->delete_records('attendance_tempusers', array('id' => $tempuser->id));
+
+        // $DB->delete_records('grade_grades', array('topicid' => $topic->id));
+        // $DB->delete_records('mastery_log', array('topicid' => $topic->id));
         $DB->delete_records('attendance_topics', array('id' => $topic->id));
 
         redirect($att->url_managetopics());
@@ -93,7 +94,7 @@ if ($action == 'delete') {
 
 $formdata = new stdClass();
 $formdata->id = $cm->id;
-$formdata->tname = $topic->name;
+$formdata->name = $topic->name;
 $formdata->topicid = $topic->id;
 //$formdata->temail = $tempuser->email;
 
@@ -106,8 +107,8 @@ if ($mform->is_cancelled()) {
 } else if ($topic = $mform->get_data()) {
     global $DB;
     $updatetopic = new stdClass();
-    $updatetopic->id = $topic->id;
-    $updatetopic->name = $topic->tname;
+    $updatetopic->id = $topic->topicid;
+    $updatetopic->name = $topic->name;
     //$updatetopic->email = $tempuser->temail;
     //$DB->update_record('attendance_tempusers', $updateuser);
     $DB->update_record('attendance_topics', $updatetopic);
