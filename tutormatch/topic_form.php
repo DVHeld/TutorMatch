@@ -17,7 +17,7 @@
 /**
  * Form for creating temporary users.
  *
- * @package    mod_attendance
+ * @package    mod_tutormatch
  * @copyright  2018 Dusan Vilicic
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -38,20 +38,12 @@ class topic_form extends moodleform {
      */
     public function definition() {
         $mform = $this->_form;
-
         $mform->addElement('hidden', 'id', 0);
         $mform->setType('id', PARAM_INT);
-
         $mform->addElement('header', 'attheader', get_string('topicaddform', 'attendance'));
-        $mform->addElement('text', 'tname', get_string('topicname', 'attendance'));
-        $mform->addRule('tname', 'Required', 'required', null, 'client');
-        $mform->setType('tname', PARAM_TEXT);
-
-        /* $mform->addElement('text', 'temail', get_string('tuseremail', 'attendance'));
-        $mform->addRule('temail', 'Email', 'email', null, 'client');
-        $mform->addRule('temail', '', 'callback', null, 'server');
-        $mform->setType('temail', PARAM_EMAIL); */
-
+        $mform->addElement('text', 'name', get_string('topicname', 'attendance'));
+        $mform->addRule('name', 'Required', 'required', null, 'client');
+        $mform->setType('name', PARAM_TEXT);
         $mform->addElement('submit', 'submitbutton', get_string('topicaddform', 'attendance'));
         $mform->closeHeaderBefore('submit');
     }
@@ -61,7 +53,7 @@ class topic_form extends moodleform {
      */
     public function definition_after_data() {
         $mform = $this->_form;
-        $mform->applyFilter('tname', 'trim');
+        $mform->applyFilter('name', 'trim');
     }
 
     /**
@@ -73,11 +65,6 @@ class topic_form extends moodleform {
      */
     public function validation($data, $files) {
         $errors = parent::validation($data, $files);
-
-        /* if ($err = mod_attendance_structure::check_existing_email($data['temail'])) {
-            $errors['temail'] = $err;
-        } */
-
         return $errors;
     }
 }

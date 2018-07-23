@@ -25,7 +25,6 @@
 require_once(dirname(__FILE__).'/../../config.php');
 global $CFG, $DB, $OUTPUT, $PAGE, $COURSE;
 require_once($CFG->dirroot.'/mod/attendance/locallib.php');
-//require_once($CFG->dirroot.'/mod/attendance/temp_form.php');
 require_once($CFG->dirroot.'/mod/attendance/topic_form.php');
 
 $id = required_param('id', PARAM_INT);
@@ -52,7 +51,6 @@ $tabs = new attendance_tabs($att, attendance_tabs::TAB_TOPICS);
 $formdata = (object)array(
     'id' => $cm->id,
 );
-//$mform = new temp_form();
 $mform = new topic_form();
 $mform->set_data($formdata);
 
@@ -63,19 +61,9 @@ if ($data = $mform->get_data()) {
     $topic->confirmed = 1;
     $topic->deleted = 1;
     $topic->courseid = $COURSE->id;
-    $topic->name = $data->tname;
+    $topic->name = $data->name;
     $topic->created = time();
-    //$user->email = time().'@ghost.user.de';
-    //$user->username = time().'@ghost.user.de';
-    //$topic->idnumber = 'tempghost';
-    //$user->mnethostid = $CFG->mnet_localhost_id;
     $topicid = $DB->insert_record('attendance_topics', $topic);
-
-    // Create the temporary user record.
-    //$newtopic = new stdClass();
-    //$newtempuser->email = $data->temail;
-    //$newtopic->topicid = $topicid;
-    //$DB->insert_record('attendance_topic', $newtopic);
 
     redirect($att->url_managetopics());
 }
@@ -86,15 +74,10 @@ echo $output->heading(get_string('topics', 'attendance').' : '.format_string($co
 echo $output->render($tabs);
 $mform->display();
 
-//$tempusers = $DB->get_records('attendance_tempusers', array('courseid' => $course->id), 'fullname, email');
 $topics = $DB->get_records('attendance_topics', array('courseid' => $course->id), 'name');
 
 echo '<div>';
 echo '<p style="margin-left:10%;">'.get_string('topics', 'attendance').'</p>';
-
-/*if ($tempusers) {
-    attendance_print_tempusers($tempusers, $att);
-}*/
 
 if ($topics) {
     attendance_print_topics($topics, $att);
@@ -128,12 +111,8 @@ function attendance_print_topics($topics, mod_attendance_structure $att) {
         echo '<td>'.format_string($topic->name).'</td>';
         echo '<td>'.userdate($topic->created, get_string('strftimedatetime')).'</td>';
         $params = array('topicid' => $topic->id);
-        //$editlink = html_writer::link($att->url_tempedit($params), get_string('edittopic', 'attendance'));
         $editlink = html_writer::link($att->url_topicedit($params), get_string('edittopic', 'attendance'));
-        //$deletelink = html_writer::link($att->url_tempdelete($params), get_string('deletetopic', 'attendance'));
         $deletelink = html_writer::link($att->url_topicdelete($params), get_string('deletetopic', 'attendance'));
-        //$mergelink = html_writer::link($att->url_tempmerge($params), get_string('mergeuser', 'attendance'));
-        //echo '<td>'.$editlink.' | '.$deletelink.' | '.$mergelink.'</td>';
         echo '<td>'.$editlink.' | '.$deletelink.'</td>';
         echo '</tr>';
     }

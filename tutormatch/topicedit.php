@@ -26,33 +26,28 @@ require_once(dirname(__FILE__).'/../../config.php');
 
 global $CFG, $DB, $PAGE, $OUTPUT;
 require_once($CFG->dirroot.'/mod/attendance/locallib.php');
-//require_once($CFG->dirroot.'/mod/attendance/tempedit_form.php');
 require_once($CFG->dirroot.'/mod/attendance/topicedit_form.php');
 
 $id = required_param('id', PARAM_INT);
-//$userid = required_param('userid', PARAM_INT);
 $topicid = required_param('topicid', PARAM_INT);
 $action = optional_param('action', null, PARAM_ALPHA);
 
 $cm = get_coursemodule_from_id('attendance', $id, 0, false, MUST_EXIST);
 $course = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
 $att = $DB->get_record('attendance', array('id' => $cm->instance), '*', MUST_EXIST);
-//$tempuser = $DB->get_record('attendance_tempusers', array('id' => $userid), '*', MUST_EXIST);
 $topic = $DB->get_record('attendance_topics', array('id' => $topicid), '*', MUST_EXIST);
 
 $att = new mod_attendance_structure($att, $cm, $course);
 
-//$params = array('userid' => $tempuser->id);
 $params = array('topicid' => $topic->id);
 if ($action) {
     $params['action'] = $action;
 }
-//$PAGE->set_url($att->url_tempedit($params));
 $PAGE->set_url($att->url_topicedit($params));
 
 require_login($course, true, $cm);
 $context = context_module::instance($cm->id);
-require_capability('mod/attendance:managetemporaryusers', $context);
+require_capability('mod/attendance:managetopics', $context);
 
 $PAGE->set_title($course->shortname.": ".$att->name.' - '.get_string('tempusersedit', 'attendance'));
 $PAGE->set_heading($course->fullname);
@@ -96,9 +91,7 @@ $formdata = new stdClass();
 $formdata->id = $cm->id;
 $formdata->name = $topic->name;
 $formdata->topicid = $topic->id;
-//$formdata->temail = $tempuser->email;
 
-//$mform = new tempedit_form();
 $mform = new topicedit_form();
 $mform->set_data($formdata);
 
@@ -109,13 +102,10 @@ if ($mform->is_cancelled()) {
     $updatetopic = new stdClass();
     $updatetopic->id = $topic->topicid;
     $updatetopic->name = $topic->name;
-    //$updatetopic->email = $tempuser->temail;
-    //$DB->update_record('attendance_tempusers', $updateuser);
     $DB->update_record('attendance_topics', $updatetopic);
     redirect($att->url_managetopics());
 }
 
-//$tabs = new attendance_tabs($att, attendance_tabs::TAB_TEMPORARYUSERS);
 $tabs = new attendance_tabs($att, attendance_tabs::TAB_TOPICS);
 
 echo $output->header();
@@ -123,4 +113,3 @@ echo $output->heading(get_string('edittopic', 'attendance').' : '.format_string(
 echo $output->render($tabs);
 $mform->display();
 echo $output->footer($course);
-
