@@ -17,8 +17,8 @@
 /**
  * Manage attendance settings
  *
- * @package    mod_attendance
- * @copyright  2011 Artem Andreev <andreev.artem@gmail.com>
+ * @package    mod_tutormatch
+ * @copyright  2018 Dusan Vilicic
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

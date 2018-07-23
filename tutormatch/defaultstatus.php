@@ -17,8 +17,8 @@
 /**
  * Allows default status set to be modified.
  *
- * @package   mod_attendance
- * @copyright 2017 Dan Marsden http://danmarsden.com
+ * @package   mod_tutormatch
+ * @copyright 2018 Dusan Vilicic
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
